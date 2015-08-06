@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bottom_bar">#EFEFEF</color>
+    <color name="background_card">#eeeeee</color>
+    <color name="background_white">#ffffff</color>
+    <color name="background_blue">#499de0</color>
+    <color name="background_home_article">#fefdde</color>
+    <color name="bottom_text_selected">#0196ff</color>
+    <color name="bottom_text_unselected">#707070</color>
+    <color name="line">#e5e5e5</color>
+    <color name="bottom_grey">#eeeeee</color>
+    <color name="bottom_text_grey">#999999</color>
+    <color name="guide_bg">#53a0d8</color>
+    <color name="text_888">#888888</color>
+    <color name="text_666">#666</color>
+    <color name="vertical_line">#cccccc</color>
+    <color name="text_333333">#333333</color>
+    <color name="text_red">#ea635f</color>
+    <color name="edit">#ffffff</color>
+    <color name="my_bg">#f3f6f9</color>
+    <color name="alert_title">#333333</color>
+
+    <color name="dialog_line">#02A2FF</color>
+    <color name="dialog_bg">#002A3D</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sel_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/background_white"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq">
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/sel_titlebar"
+        style="@style/title_bar_font"
+        app:rightButtonEnable="true"
+        app:rightButtonBgImg="@drawable/sure"
+        app:rightButtonBgImgPress="@drawable/sure_press"
+        android:text="选择" >
+    </com.sq.jzq.views.TitleBarView>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/job_card_h"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:id="@+id/sel_job_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView 
+                android:id="@+id/sel_xzzw_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size"
+                android:text="@string/job_sel_job"/>
+            <ImageView 
+                android:id="@+id/sel_xzzw_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/job_icon_left"
+                android:src="@drawable/job_left_sjx"/>
+        </LinearLayout>
+       <View 
+           style="@style/vertical_line"
+           />
+        <LinearLayout 
+            android:id="@+id/sel_loca_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+             <TextView 
+                android:id="@+id/sel_xxdq_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size"
+                android:text="@string/job_sel_loca"/>
+            <ImageView 
+                android:id="@+id/sel_xxdq_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/job_icon_left"
+                android:src="@drawable/job_left_sjx"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View 
+        style="@style/line_style"/>
+    
+       <ListView
+        android:id="@+id/sel_lv_job_type"
+        style="@style/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="0dp"
+         >
+    </ListView>
+    
+        <ListView
+        android:id="@+id/sel_lv_loca"
+        style="@style/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="0dp"
+        android:visibility="gone"
+         >
+    </ListView>
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_sel.xml -->

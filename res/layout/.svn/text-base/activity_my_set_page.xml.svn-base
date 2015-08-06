@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_grey"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:layout_width="match_parent"
+        android:text="@string/title_set_page"
+        app:leftButtonEnable="true"
+        >
+    </com.sq.jzq.views.TitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/my_set_page_margin"
+            android:background="@color/background_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_image_margin_top"
+                android:src="@drawable/about_ogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_image_margin_text_top"
+                android:text="@string/my_set_page"
+                android:textColor="@color/background_blue"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my_set_page_image_margin_text_top"
+                    android:text="当前版本"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/msp_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my_set_page_image_margin_text_top"
+                    android:text="3.0"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_image_margin_text_top1"
+                android:text="技术支持"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_margin"
+                android:text="北京思前软件有限公司"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_image_margin_text_top1"
+                android:text="联系我们"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_margin"
+                android:text="电话：010-82896022"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_margin"
+                android:text="北京思前软件有限公司"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_image_margin_text_top1"
+                android:text="商务合作"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_margin"
+                android:text="13520989480"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_set_page_image_margin_text_top1"
+                android:text="Copyright 2014 siqiansoft.AllRights Reserved."
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/hint_text_size"
+                android:layout_marginBottom="10dp"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

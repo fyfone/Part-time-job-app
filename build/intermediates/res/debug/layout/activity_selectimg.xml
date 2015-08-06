@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/select_titlebar"
+        style="@style/title_bar_font"
+        android:text="全身照"
+        app:rightButtonBgImg="@drawable/save"
+        app:rightButtonBgImgPress="@drawable/save_press"
+        app:rightButtonEnable="true" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <GridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_left_right_margin"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:horizontalSpacing="@dimen/item_left_right_margin"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_selectimg.xml -->

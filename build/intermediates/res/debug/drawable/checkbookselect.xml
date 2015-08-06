@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true" android:drawable="@drawable/chk_checked"></item>
+	<item android:state_checked="false" android:drawable="@drawable/chk"></item>
+</selector>
+<!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/drawable/checkbookselect.xml -->

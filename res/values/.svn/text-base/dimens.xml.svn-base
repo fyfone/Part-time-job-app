@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="guide_image_top">60dp</dimen>
+    <dimen name="guide_image_bottom">57dp</dimen>
+    <dimen name="guide_button_left">65dp</dimen>
+    <dimen name="guide_button_space">30dp</dimen>
+    <dimen name="guide_button_height">41dp</dimen>
+    <dimen name="line">1dp</dimen>
+    <dimen name="item_left_right_margin">16dp</dimen>
+    <dimen name="card_left_right_margin">7dp</dimen>
+    <dimen name="card_left_right_padding">7dp</dimen>
+    <dimen name="button_left_right_margin">18dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="icon_right">5dp</dimen>
+    <dimen name="hint_text_size">13sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+
+    <!-- title -->
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="title_paddingleft">12dp</dimen>
+
+    <!-- 职位 -->
+    <dimen name="job_card_h">43dp</dimen>
+    <dimen name="job_icon_left">12dp</dimen>
+
+    <!-- 底部 -->
+
+
+    <!-- 底部 -->
+    <dimen name="bottom_bar_height">60dp</dimen>
+
+    <!-- 登陆 -->
+    <dimen name="login_margin_top">40dp</dimen>
+    <dimen name="login_bulie_line_margin">4dp</dimen>
+    <dimen name="login_bulie_line_width">2dp</dimen>
+    <dimen name="login_margin_registration">30dp</dimen>
+    <dimen name="login_edittext_height">35dp</dimen>
+    <!-- <dimen name="login_edittext_width">307dp</dimen> -->
+    <dimen name="login_edittext_im_marginleft">13dp</dimen>
+    <dimen name="login_edittext_size">13dp</dimen>
+    <dimen name="login_registration_leftOf">5dp</dimen>
+    <dimen name="login_bt_registration">10dp</dimen>
+    <dimen name="registration_bt_registration">17dp</dimen>
+    <dimen name="registration_margin_top">20dp</dimen>
+    <dimen name="registration_bt_code_margin">5dp</dimen>
+
+    <string name="phone_length">11</string>
+    <!-- 我的 -->
+    <dimen name="my_ll_item_height">53dp</dimen>
+    <dimen name="my_ll_item_tv_size">13dp</dimen>
+    <dimen name="my_ll_item_about">16dp</dimen>
+    <dimen name="my_head_im">66dp</dimen>
+    <dimen name="my_record_bar_height">30dp</dimen>
+    <dimen name="my_record_bar_margin_top">24dp</dimen>
+    <dimen name="my_login_im_margin_top">19dp</dimen>
+    <dimen name="my_login_tv_margin_top">11dp</dimen>
+    <dimen name="my_opinion_margin_top">32dp</dimen>
+    <dimen name="my_opinion_itme_margin_top">25dp</dimen>
+    <dimen name="my_opinion_itme_margin_text">10dp</dimen>
+    <dimen name="my_personal_head_margin_top">10dp</dimen>
+    <dimen name="my_personal_head_text_margin">8dp</dimen>
+    <dimen name="my_personal_item_margin_top">5dp</dimen>
+    <dimen name="my_personal_item_height">40dp</dimen>
+    <dimen name="my_personal_photo_margin">6dp</dimen>
+    <dimen name="my_personal_photo_margin_left">35dp</dimen>
+    <dimen name="my_set_page_margin">10dp</dimen>
+    <dimen name="my_set_page_image_margin_top">27dp</dimen>
+    <dimen name="my_set_page_image_margin_text_top">20dp</dimen>
+    <dimen name="my_set_page_image_margin_text_top1">50dp</dimen>
+    <!-- 首页 -->
+    <dimen name="home_article_margin">3dp</dimen>
+    <dimen name="home_article_height">28dp</dimen>
+    <dimen name="home_article_tv_margin">8dp</dimen>
+    <dimen name="home_partbar_height">38dp</dimen>
+    <dimen name="home_carousel_height">107dp</dimen>
+    <dimen name="home_carousel_dot_margein_bottom">5dp</dimen>
+    <dimen name="home_carousel_dot_weight">0.5dp</dimen>
+    <dimen name="home_gv_height">153dp</dimen>
+    <dimen name="home_gv_margin_top">3dp</dimen>
+    <dimen name="home_gv_item_margin_down">10dp</dimen>
+    <dimen name="home_gv_item_margin_about">24dp</dimen>
+    <dimen name="home_gv_item_margin_tv_top">7dp</dimen>
+    <dimen name="home_gv_item_margin_tv_size">12sp</dimen>
+    <dimen name="home_part_tv_size">18sp</dimen>
+    <dimen name="home_tille_position_tv_size">16sp</dimen>
+    <dimen name="home_tille_position_im">9sp</dimen>
+
+    <!-- 立即赚钱 -->
+    <dimen name="llzq_text_top">9dp</dimen>
+    <dimen name="llzq_hint_left">20dp</dimen>
+
+    <!-- item -->
+    <dimen name="item_title_top">15dp</dimen>
+    <dimen name="item_title_bott">9dp</dimen>
+    <dimen name="item_title_bott_h">19dp</dimen>
+    <dimen name="item_title_right">5dp</dimen>
+    <dimen name="item_bottom">8dp</dimen>
+
+    <!-- 职位详情 -->
+    <dimen name="jd_vertical_line">15dp</dimen>
+
+    <!-- 弹出框 -->
+    <dimen name="alert_icon_width">20dp</dimen>
+
+    <!-- vip -->
+    <dimen name="vip_recruiters_title_margin_leftOf">13dp</dimen>
+    <dimen name="vip_recruiters_title_margin_top">10dp</dimen>
+    <dimen name="vip_company_im_margin">13dp</dimen>
+
+    
+    <dimen name="spinner_width">200dp</dimen>
+   	<dimen name="spinner_item_height">60dp</dimen>
+   	<dimen name="spinner_content_padding">20dp</dimen>
+   	<dimen name="alert_left">10dp</dimen>
+    <dimen name="alert_icon_right">5dp</dimen>
+    <dimen name="alert_padding_bottom">5dp</dimen>
+</resources>

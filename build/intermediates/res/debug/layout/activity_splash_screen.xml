@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guide_bg"
+    tools:context="com.sq.jzq.SplashScreenActivity" >
+
+    <ImageView 
+        android:id="@+id/guide_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guide_image_top"
+        android:layout_marginBottom="@dimen/guide_image_bottom"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/start"
+        />
+    <TextView 
+        android:id="@+id/guide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guide_image"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:text="@string/guide_text"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        >
+        
+        <Button 
+            android:id="@+id/guide_jobhunter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/guide_button_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/guide_button_left"
+            android:layout_marginRight="@dimen/guide_button_space"
+            android:text="@string/guide_button_jobhunter"
+            android:textColor="@color/guide_bg"
+            android:background="@drawable/guide_button"
+        />
+        <Button
+            android:id="@+id/guide_recruiter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/guide_button_height"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/guide_button_left"
+            android:text="@string/guide_button_recruiter"
+            android:textColor="@color/guide_bg"
+            android:background="@drawable/guide_button"
+        />
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>
+<!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_splash_screen.xml -->

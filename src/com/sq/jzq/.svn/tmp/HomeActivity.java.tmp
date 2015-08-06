@@ -1,0 +1,306 @@
+package com.sq.jzq;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Timer;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.sq.jzq.bean.LoginResult;
+import com.sq.jzq.bean.User;
+import com.sq.jzq.company.MyFragmentCompany;
+import com.sq.jzq.home.HomeFragment;
+import com.sq.jzq.job.JobFragment;
+import com.sq.jzq.my.MyFragment;
+import java.util.TimerTask;
+
+import com.sq.jzq.util.GsonUtils;
+import com.sq.jzq.util.SharedPreferencesUtils;
+import com.sq.jzq.util.UpdateVersionService;
+import com.sq.jzq.util.VolleyUtil;
+import com.sq.jzq.vip.VipFragment;
+
+public class HomeActivity extends FragmentActivity implements OnClickListener,
+		OnPageChangeListener {
+
+	ViewPager viewPager;
+	ViewPagerAdapter viewAdapter;
+	BottomViewItem item;
+	ArrayList<Fragment> mViewItems = new ArrayList<Fragment>();
+	private ViewPagerScroller vpc;
+	private LinearLayout homeAll;
+	private UpdateVersionService updateVersionService;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_home);
+		homeAll = (LinearLayout) findViewById(R.id.home_linearlayout);
+		// BitmapFactory.Options opt = new BitmapFactory.Options();
+		// opt.inPurgeable = true;
+		// opt.inInputShareable = true;
+		// InputStream is = this.getResources().openRawResource(R.drawable.bg);
+		// Bitmap bitmap = BitmapFactory.decodeStream(is, null, opt);
+		// try {
+		// is.close();
+		// } catch (IOException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
+		// homeAll.setBackgroundDrawable(new BitmapDrawable(getResources(),
+		// bitmap));
+		// homeAll.setBackgroundResource(R.drawable.bg);
+
+		item = BottomViewItem.getInstance();
+		initViews();
+		setTabSelection(0);
+
+		new Handler().postDelayed(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				updateVersionService = new UpdateVersionService(
+						Globals.VERSION_XML, HomeActivity.this);// 创建更新业务对象
+				updateVersionService.checkUpdate();// 调用检查更新的方法,如果可以更新.就更新
+			}
+		}, 1);
+		if ("".equals(SharedPreferencesUtils.getString(HomeActivity.this,
+				Globals.USER_PHONE, null))
+				&& "".equals(SharedPreferencesUtils.getString(
+						HomeActivity.this, Globals.USER_PASSWORD, null))) {
+
+<<<<<<< .mine
+			Log.i("登陆状态", "退出登陆状态");
+		} else {
+			initLogin();
+
+		}
+
+		SharedPreferences sharedPre = getSharedPreferences("config",
+				MODE_PRIVATE);
+		String phone = sharedPre.getString("phone", "");
+		Boolean issigned = sharedPre.getBoolean("isLogin", false);
+		String sissionId = sharedPre.getString("sessionId", "");
+		String imgPath = sharedPre.getString("IconPath", "");
+		User.setLoginInfo(phone, issigned, sissionId, imgPath);
+=======
+>>>>>>> .r300
+	}
+
+	LoginResult loginResult;
+
+	public void initLogin() {
+		// 登陆
+		Map<String, String> params = new HashMap<String, String>();
+		params.put(
+				Globals.WS_POST_KEY,
+				"{\"Ac\":\"LOGIN\",\"Para\":{\"Mb\":\""
+						+ SharedPreferencesUtils.getString(HomeActivity.this,
+								Globals.USER_PHONE, null)
+						+ "\",\"Pwd\":\""
+						+ SharedPreferencesUtils.getString(HomeActivity.this,
+								Globals.USER_PASSWORD, null) + "\"}}");
+		new VolleyUtil() {
+
+			public void analysisData(String response) {
+				LoginResult s = GsonUtils
+						.json2bean(response, LoginResult.class);
+				if (s == null || !(s.Stu == 1)) {
+					Toast.makeText(HomeActivity.this, Globals.SER_ERROR,
+							Globals.TOAST_SHORT);
+				} else if (s.Stu == 1 && s.Rst.Scd == 0) {
+					Toast.makeText(HomeActivity.this, s.Rst.Msg,
+							Globals.TOAST_SHORT);
+				} else {
+
+					Toast.makeText(HomeActivity.this, s.Rst.Msg,
+							Globals.TOAST_SHORT);
+					Globals.USER_TYPE = s.Rst.Etype;
+					loginResult = s;
+					User.isLogin = true;
+					User.sessionId = s.Rst.Sid;
+					User.setIconPath(s.Rst.PH);
+					// User.IconPath = s.Rst.PH;
+					Log.i("这里看看的有没有地址111111111", s.Rst.PH);
+					Log.i("这里看看的有没有地址111111111", User.getIconPath());
+
+					Log.i("看看阿奎那可能看看看", response);
+
+				}
+			}
+		}.volleyStringRequestPost(HomeActivity.this, params);
+
+	}
+
+	/**
+	 * 控件初始化
+	 */
+	private void initViews() {
+		viewPager = (ViewPager) findViewById(R.id.home_viewpager);
+
+		mViewItems.add(new HomeFragment());
+		mViewItems.add(new JobFragment());
+		mViewItems.add(new VipFragment());
+		if (Globals.USER_TYPE.equals("q")) {
+			mViewItems.add(new MyFragment());
+		} else {
+			mViewItems.add(new MyFragmentCompany());
+		}
+
+		viewAdapter = new ViewPagerAdapter(getSupportFragmentManager(),
+				mViewItems);
+		viewPager.setAdapter(viewAdapter);
+		viewPager.setCurrentItem(0);
+		viewPager.setOffscreenPageLimit(3);
+		viewPager.setOnPageChangeListener(this);
+		// viewPager.setOnTouchListener(new OnTouchListener() {
+		//
+		// @Override
+		// public boolean onTouch(View arg0, MotionEvent arg1) {
+		// // TODO Auto-generated method stub
+		// return true;
+		// }
+		// });
+		for (int i = 0; i < item.viewNum; i++) {
+			item.linears[i] = (LinearLayout) findViewById(item.linears_id[i]);
+			item.linears[i].setOnClickListener(this);
+			item.images[i] = (ImageView) findViewById(item.images_id[i]);
+			item.texts[i] = (TextView) findViewById(item.texts_id[i]);
+		}
+	}
+
+	/**
+	 * @param index
+	 *            根据索引值切换fragment
+	 */
+	private void setTabSelection(int index) {
+		clearSelection();
+		item.images[index].setImageResource(item.images_selected[index]);
+		item.texts[index].setTextColor(getResources().getColor(
+				R.color.bottom_text_selected));
+	}
+
+	/**
+	 * 清空所有图标和文字状态
+	 */
+	private void clearSelection() {
+		for (int i = 0; i < item.viewNum; i++) {
+			item.images[i].setImageResource(item.images_unselected[i]);
+			item.texts[i].setTextColor(getResources().getColor(
+					R.color.bottom_text_unselected));
+		}
+	}
+
+	@Override
+	public void onClick(View v) {
+		vpc = new ViewPagerScroller(HomeActivity.this);
+		vpc.setScrollDuration(0);
+		vpc.initViewPagerScroll(viewPager);
+		for (int i = 0; i < item.linears_id.length; i++)
+			if (v.getId() == item.linears_id[i]) {
+				viewPager.setCurrentItem(i);
+				setTabSelection(i);
+			}
+		vpc.setScrollDuration(1000);
+		vpc.initViewPagerScroll(viewPager);
+	}
+
+	@Override
+	public void onPageScrollStateChanged(int arg0) {
+
+	}
+
+	@Override
+	public void onPageScrolled(int arg0, float arg1, int arg2) {
+
+	}
+
+	@Override
+	public void onPageSelected(int arg0) {
+		setTabSelection(arg0);
+	}
+
+	private static Boolean isQuit = false;
+	Timer timer = new Timer();
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			if (isQuit == false) {
+				isQuit = true;
+				Toast.makeText(getBaseContext(), "再按一次返回键退出程序",
+						Toast.LENGTH_SHORT).show();
+				TimerTask task = new TimerTask() {
+					@Override
+					public void run() {
+						isQuit = false;
+					}
+				};
+				timer.schedule(task, 2000);
+			} else {
+				finish();
+				System.exit(0);
+			}
+		}
+		return false;
+	}
+	// @Override
+	// public boolean onKeyDown(int keyCode, KeyEvent event) {
+	// switch (keyCode) {
+	// case KeyEvent.KEYCODE_BACK:
+	// long secondTime = System.currentTimeMillis();
+	// if (secondTime - firstTime > 2000) { // 如果两次按键时间间隔大于2秒，则不退出
+	// Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+	// firstTime = secondTime;// 更新firstTime
+	// return true;
+	// } else { // 两次按键小于2秒时，退出应用
+	// System.exit(0);
+	// }
+	// break;
+	// }
+	// return super.onKeyDown(keyCode, event);
+	// }
+
+	// if(timer != null) {
+	// if(task != null) {
+	// task.cancel();
+	// }
+	// }
+	// task = new MyTimerTask(alert);
+	// timer.schedule(task, 1000);
+
+	// private boolean isAppInstalled(Context context,String packagename)
+	// {
+	// PackageInfo packageInfo;
+	// try {
+	// packageInfo = context.getPackageManager().getPackageInfo(packagename, 0);
+	// }catch (NameNotFoundException e) {
+	// packageInfo = null;
+	// e.printStackTrace();
+	// }
+	// if(packageInfo ==null){
+	// System.out.println("没有安装");
+	// return false;
+	// }else{
+	// System.out.println("已经安装");
+	// return true;
+	// }
+	// }
+
+}

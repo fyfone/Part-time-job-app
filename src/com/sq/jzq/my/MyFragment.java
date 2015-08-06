@@ -1,0 +1,181 @@
+package com.sq.jzq.my;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.sq.jzq.R;
+import com.sq.jzq.bean.User;
+import com.sq.jzq.views.CircularImage;
+import com.sq.jzq.views.TitleBarView.OnClickEnterButtonListener;
+
+public class MyFragment extends Fragment implements OnClickListener {
+	View view;
+	private RelativeLayout rlData, rlMsg, rlEvaluate, rlChagePwd, rlResume;
+	private LinearLayout llSqjl, llYyjl, llGz;
+	private TextView tv_login;
+	private CircularImage iv_head;
+//	private TitleBarView more_titlebar;
+	private TextView ivSet;
+	String ACTION_NAME = "meuserinfo";
+
+	@Override
+	public View onCreateView(LayoutInflater inflater,
+			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+		view = inflater.inflate(R.layout.fragment_my, container, false);
+		if (view != null) {
+			ivSet = (TextView)view.findViewById(R.id.my_set);
+			tv_login = (TextView) view.findViewById(R.id.tv_login); // 登陆
+			iv_head = (CircularImage) view.findViewById(R.id.iv_head); // 头像
+			rlData = (RelativeLayout) view.findViewById(R.id.my_data); // 个人资料
+			rlMsg = (RelativeLayout) view.findViewById(R.id.my_msg); // 我的消息
+			rlEvaluate = (RelativeLayout) view.findViewById(R.id.my_evaluate); // 我的评价
+			rlChagePwd = (RelativeLayout) view.findViewById(R.id.my_change_pwd); // 修改密码
+			rlResume = (RelativeLayout) view.findViewById(R.id.my_resume); // 个人简历
+
+			llSqjl = (LinearLayout) view.findViewById(R.id.my_sqjl); // 申请记录
+			llYyjl = (LinearLayout) view.findViewById(R.id.my_yyjl); // 邀约记录
+			llGz = (LinearLayout) view.findViewById(R.id.my_gz); // 我的关注
+
+			tv_login.setOnClickListener(this);
+			rlData.setOnClickListener(this);
+			rlMsg.setOnClickListener(this);
+			rlEvaluate.setOnClickListener(this);
+			rlChagePwd.setOnClickListener(this);
+			rlResume.setOnClickListener(this);
+			llSqjl.setOnClickListener(this);
+			llYyjl.setOnClickListener(this);
+			llGz.setOnClickListener(this);
+			// initView();
+			// 设置botton
+			if (ivSet != null) {
+				ivSet.setOnClickListener(new OnClickListener() {
+					
+					@Override
+					public void onClick(View arg0) {
+						startActivity(new Intent(getActivity(),
+								MySetActivity.class));
+					}
+				}); 
+			}
+		}
+		return view;
+	}
+
+	@Override
+	public void onResume() {
+		initView();
+		super.onResume();
+	}
+
+	public void initView() {
+
+		Log.i("Response", "user:" + User.isLogin);
+		if (!User.isLogin) {
+			tv_login.setVisibility(View.VISIBLE);
+			tv_login.setText("登陆/注销");
+			ImageLoader.getInstance().displayImage("", iv_head);
+			
+			iv_head.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					Intent intent = new Intent();
+					intent.setClass(getActivity(), LoginOneActivity.class);
+					loginInfo = "login";
+					startActivity(intent);
+				}
+			});
+		} else {
+			Log.d("这里 ", User.getIconPath() + "就是这个图片");
+			ImageLoader.getInstance().displayImage(User.getIconPath(), iv_head);
+			tv_login.setVisibility(View.GONE);
+			iv_head.setOnClickListener(null);
+		}
+	}
+
+	String loginInfo;
+
+	@Override
+	public void onClick(View arg0) {
+
+		Intent intent = new Intent();
+		switch (arg0.getId()) {
+		case R.id.my_data:// 个人资料
+			intent.setClass(getActivity(), MyDataActivity.class);
+			loginInfo = "data";
+			break;
+		case R.id.my_msg:// 我的消息
+
+			intent.setClass(getActivity(), MyMsgActivity.class);
+			loginInfo = "msg";
+
+			break;
+		case R.id.my_evaluate:// 我的评价
+
+			intent.setClass(getActivity(), MyEvaluateActivity.class);
+			loginInfo = "evaluate";
+			break;
+		case R.id.my_change_pwd:// 修改密码
+
+			intent.setClass(getActivity(), ChagePwdActivity.class);
+			loginInfo = "pwd";
+			break;
+		case R.id.my_resume:// 个人简历
+
+			intent.setClass(getActivity(), MyResumeActivity.class);
+			loginInfo = "resume";
+			break;
+		case R.id.my_sqjl:// 申请记录
+			intent.setClass(getActivity(), SqjlActivity.class);
+			loginInfo = "sqjl";
+			break;
+		case R.id.my_yyjl:// 邀约记录
+			intent.setClass(getActivity(), InviteRecordActivity.class);
+			loginInfo = "yyjl";
+			break;
+		case R.id.my_gz:// 我的关注
+			intent.setClass(getActivity(), MyGzActivity.class);
+			loginInfo = "gz";
+			break;
+		case R.id.tv_login:// 登陆
+			intent.setClass(getActivity(), LoginOneActivity.class);
+			loginInfo = "login";
+			break;
+		default:
+			break;
+		}
+		if (User.isLogin == true) {
+			startActivity(intent);
+		} else if (User.isLogin == false) {
+			Intent intents = new Intent(getActivity(), LoginOneActivity.class);
+			intents.putExtra("loginInfo", loginInfo);
+			startActivity(intents);
+		}
+
+		// } else if ("false".equals(SharedPreferencesUtils.getString(
+		// getActivity(), Globals.USER_PASSWORD, ""))) {
+		// if (nextCounter == false) {
+		// nextCounter = true;
+		// Toast.makeText(getActivity(), "您还没有登陆再次点击进入登陆界面", 0).show();
+		// } else if (nextCounter == true) {
+		// nextCounter = false;
+		// Intent intent = new Intent(getActivity(),
+		// LoginOneActivity.class);
+		// startActivity(intent);
+		// }
+		// }
+	}
+}

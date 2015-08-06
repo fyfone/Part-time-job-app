@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_marginTop="@dimen/icon_right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/card_left_right_padding"
+        android:paddingRight="@dimen/card_left_right_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_title_bott"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:src="@drawable/wodepingjia_shj" />
+
+            <TextView
+                style="@style/sqjl_item_sqsj"
+                android:layout_marginRight="@dimen/icon_right"
+                android:text="邀约时间:" />
+
+            <TextView
+                android:id="@+id/sqjl_item_time"
+                style="@style/sqjl_item_date"
+                android:text="2015-03-30" />
+
+            
+
+            <Button
+                android:id="@+id/sqjl_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/invite_shch"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_style"
+            android:layout_gravity="bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_title_bott"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/sqjl_item_title"
+                style="@style/item_title"
+                android:text="服装模特" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_bottom"
+            android:layout_marginTop="@dimen/item_title_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/sqjl_item_loca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/item_title_right"
+                android:singleLine="true"
+                android:text="北京市海淀区"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/sqjl_item_unit"
+                style="@style/salary"
+                android:text="（已邀约）" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

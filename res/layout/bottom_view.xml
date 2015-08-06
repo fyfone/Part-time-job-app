@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_bar_height"
+    android:gravity="center_vertical"
+    android:background="@color/bottom_bar"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/home_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/home_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/home" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/job_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/job_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/job_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/job" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vip_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/vip_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/vip_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/vip" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/my_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/my_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/my_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/my" />
+    </LinearLayout>
+
+
+</LinearLayout>

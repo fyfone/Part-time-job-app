@@ -1,0 +1,437 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/Jianzhi/!svn/ver/483/jzq3.0/res/layout
+END
+listview_my_message_invitation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/323/jzq3.0/res/layout/listview_my_message_invitation.xml
+END
+activity_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Jianzhi/!svn/ver/393/jzq3.0/res/layout/activity_login.xml
+END
+activity_my_evaluate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/416/jzq3.0/res/layout/activity_my_evaluate.xml
+END
+activity_resume_collection.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Jianzhi/!svn/ver/402/jzq3.0/res/layout/activity_resume_collection.xml
+END
+activity_selectimg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/activity_selectimg.xml
+END
+activity_map.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/353/jzq3.0/res/layout/activity_map.xml
+END
+loca_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Jianzhi/!svn/ver/370/jzq3.0/res/layout/loca_item.xml
+END
+fragment_job.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/248/jzq3.0/res/layout/fragment_job.xml
+END
+activity_sel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/259/jzq3.0/res/layout/activity_sel.xml
+END
+dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Jianzhi/!svn/ver/171/jzq3.0/res/layout/dialog.xml
+END
+activity_my_gz.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Jianzhi/!svn/ver/330/jzq3.0/res/layout/activity_my_gz.xml
+END
+activity_image_grid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/activity_image_grid.xml
+END
+activity_job_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/454/jzq3.0/res/layout/activity_job_detail.xml
+END
+fragment_my.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Jianzhi/!svn/ver/454/jzq3.0/res/layout/fragment_my.xml
+END
+activity_invite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Jianzhi/!svn/ver/309/jzq3.0/res/layout/activity_invite.xml
+END
+listview_invite_company.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Jianzhi/!svn/ver/402/jzq3.0/res/layout/listview_invite_company.xml
+END
+activity_change_pwd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/483/jzq3.0/res/layout/activity_change_pwd.xml
+END
+v_grey_bg_horizontal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/186/jzq3.0/res/layout/v_grey_bg_horizontal.xml
+END
+activity_my_set.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Jianzhi/!svn/ver/406/jzq3.0/res/layout/activity_my_set.xml
+END
+activity_my_resume.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Jianzhi/!svn/ver/429/jzq3.0/res/layout/activity_my_resume.xml
+END
+listview_select_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/189/jzq3.0/res/layout/listview_select_item.xml
+END
+dialog_evaluation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/383/jzq3.0/res/layout/dialog_evaluation.xml
+END
+activity_get_loca.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/370/jzq3.0/res/layout/activity_get_loca.xml
+END
+activity_chage_pwd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Jianzhi/!svn/ver/340/jzq3.0/res/layout/activity_chage_pwd.xml
+END
+fragment_my_company.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/451/jzq3.0/res/layout/fragment_my_company.xml
+END
+title_bar_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Jianzhi/!svn/ver/418/jzq3.0/res/layout/title_bar_view.xml
+END
+listview_invite_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/333/jzq3.0/res/layout/listview_invite_item.xml
+END
+item_published_grida.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/item_published_grida.xml
+END
+activity_splash_screen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Jianzhi/!svn/ver/209/jzq3.0/res/layout/activity_splash_screen.xml
+END
+xlistview_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Jianzhi/!svn/ver/126/jzq3.0/res/layout/xlistview_header.xml
+END
+activity_my_set_opinion.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Jianzhi/!svn/ver/456/jzq3.0/res/layout/activity_my_set_opinion.xml
+END
+gv_houme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Jianzhi/!svn/ver/136/jzq3.0/res/layout/gv_houme.xml
+END
+gallery_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/451/jzq3.0/res/layout/gallery_item.xml
+END
+listview_sqjl_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Jianzhi/!svn/ver/333/jzq3.0/res/layout/listview_sqjl_item.xml
+END
+activity_registration_agreement.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/418/jzq3.0/res/layout/activity_registration_agreement.xml
+END
+activity_my_msg_comany.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Jianzhi/!svn/ver/422/jzq3.0/res/layout/activity_my_msg_comany.xml
+END
+activity_my_company_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Jianzhi/!svn/ver/485/jzq3.0/res/layout/activity_my_company_data.xml
+END
+v_bule_line.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Jianzhi/!svn/ver/121/jzq3.0/res/layout/v_bule_line.xml
+END
+listview_vip_enterprise.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Jianzhi/!svn/ver/458/jzq3.0/res/layout/listview_vip_enterprise.xml
+END
+activity_sqjl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Jianzhi/!svn/ver/154/jzq3.0/res/layout/activity_sqjl.xml
+END
+listview_vip_wanted.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/451/jzq3.0/res/layout/listview_vip_wanted.xml
+END
+activity_select_pic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/340/jzq3.0/res/layout/activity_select_pic.xml
+END
+item_popupwindows.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/item_popupwindows.xml
+END
+v_bule_line_horizontal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Jianzhi/!svn/ver/186/jzq3.0/res/layout/v_bule_line_horizontal.xml
+END
+activity_invitation_interview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Jianzhi/!svn/ver/333/jzq3.0/res/layout/activity_invitation_interview.xml
+END
+item_image_bucket.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/item_image_bucket.xml
+END
+listview_my_message_circle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Jianzhi/!svn/ver/330/jzq3.0/res/layout/listview_my_message_circle.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/23/jzq3.0/res/layout/activity_main.xml
+END
+activity_photo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/activity_photo.xml
+END
+activity_my_msg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Jianzhi/!svn/ver/340/jzq3.0/res/layout/activity_my_msg.xml
+END
+activity_my_set_page.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/418/jzq3.0/res/layout/activity_my_set_page.xml
+END
+listview_vip_company_user.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Jianzhi/!svn/ver/451/jzq3.0/res/layout/listview_vip_company_user.xml
+END
+activity_my_set_disclaimer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Jianzhi/!svn/ver/418/jzq3.0/res/layout/activity_my_set_disclaimer.xml
+END
+fragment_home.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Jianzhi/!svn/ver/485/jzq3.0/res/layout/fragment_home.xml
+END
+xlistview_footer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Jianzhi/!svn/ver/126/jzq3.0/res/layout/xlistview_footer.xml
+END
+listview_my_evaluation_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Jianzhi/!svn/ver/333/jzq3.0/res/layout/listview_my_evaluation_item.xml
+END
+listview_company_position.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Jianzhi/!svn/ver/266/jzq3.0/res/layout/listview_company_position.xml
+END
+fragment_vip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/288/jzq3.0/res/layout/fragment_vip.xml
+END
+activity_evaluation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/336/jzq3.0/res/layout/activity_evaluation.xml
+END
+activity_registration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Jianzhi/!svn/ver/449/jzq3.0/res/layout/activity_registration.xml
+END
+downloaddialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Jianzhi/!svn/ver/23/jzq3.0/res/layout/downloaddialog.xml
+END
+activity_my_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Jianzhi/!svn/ver/485/jzq3.0/res/layout/activity_my_data.xml
+END
+activity_image_bucket.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/activity_image_bucket.xml
+END
+bottom_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Jianzhi/!svn/ver/32/jzq3.0/res/layout/bottom_view.xml
+END
+listvie_gallery.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Jianzhi/!svn/ver/483/jzq3.0/res/layout/listvie_gallery.xml
+END
+listview_my_attention_wanted.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Jianzhi/!svn/ver/330/jzq3.0/res/layout/listview_my_attention_wanted.xml
+END
+v_grey_line.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Jianzhi/!svn/ver/266/jzq3.0/res/layout/v_grey_line.xml
+END
+listview_jzl_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/154/jzq3.0/res/layout/listview_jzl_item.xml
+END
+activity_home.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/Jianzhi/!svn/ver/40/jzq3.0/res/layout/activity_home.xml
+END
+item_image_grid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Jianzhi/!svn/ver/346/jzq3.0/res/layout/item_image_grid.xml
+END
+activity_vip_compan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/457/jzq3.0/res/layout/activity_vip_compan.xml
+END
+v_bule_line_horizontal_short.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Jianzhi/!svn/ver/418/jzq3.0/res/layout/v_bule_line_horizontal_short.xml
+END

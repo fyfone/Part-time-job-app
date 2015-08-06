@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/background_blue"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/title_paddingleft"
+    android:paddingRight="@dimen/title_paddingleft" >
+
+    <ImageButton
+        android:id="@+id/tbv_back"
+        style="@style/title_bar_font"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="Back"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tbv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:text="标  题"
+        android:textSize="18sp"
+        android:textColor="@color/background_white" />
+
+    <ImageButton
+        android:id="@+id/tbv_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="Enter"
+        android:scaleType="centerInside" />
+
+</RelativeLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/title_bar_view.xml -->

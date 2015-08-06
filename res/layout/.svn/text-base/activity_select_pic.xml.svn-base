@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/alert_left" >
+
+         <ImageView
+            android:layout_width="@dimen/alert_icon_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/alert_icon_right"
+            android:src="@drawable/alert_flag2" /> 
+
+        <TextView
+            android:id="@+id/spinner_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改头像选择"
+            android:textColor="@color/dialog_line" />
+    </LinearLayout>
+
+    <View style="@style/alert_line" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spinner_content_padding"
+        android:paddingRight="@dimen/spinner_content_padding" >
+
+        <LinearLayout
+            android:id="@+id/update_icon_pick_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_item_height"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/alert_padding_bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="从相册选择"
+                android:textColor="@color/text_333333" 
+                android:textSize="@dimen/text_size">
+            </TextView>
+        </LinearLayout>
+        <View style="@style/line_style" />
+        
+        <LinearLayout
+            android:id="@+id/update_icon_photograph"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_item_height"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/alert_padding_bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="相机拍照"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size" >
+            </TextView>
+        </LinearLayout>
+         <View style="@style/line_style" />
+        
+        <LinearLayout
+            android:id="@+id/update_icon_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_item_height"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/alert_padding_bottom"
+            android:layout_marginBottom="@dimen/item_bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="取消选择"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_size"  >
+            </TextView>
+        </LinearLayout>
+         <View style="@style/line_style" />
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

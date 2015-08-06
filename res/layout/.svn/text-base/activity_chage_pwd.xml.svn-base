@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:text="@string/chage_pwd" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <LinearLayout
+        style="@style/title_login_box"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/registration_margin_top" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+            android:src="@drawable/log_mm" />
+
+        <include layout="@layout/v_bule_line" />
+
+        <EditText
+            android:id="@+id/et_uppass_pwd"
+            style="@style/login_pwd_et"
+            android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+            android:hint="@string/registration_edittext_hint_old_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/title_login_box"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/registration_bt_registration" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+            android:src="@drawable/log_mm" />
+
+        <include layout="@layout/v_bule_line" />
+
+        <EditText
+            android:id="@+id/et_uppass_nwd"
+            style="@style/login_pwd_et"
+            android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+            android:hint="@string/registration_edittext_hint_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/title_login_box"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/registration_bt_registration" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+            android:src="@drawable/log_mm" />
+
+        <include layout="@layout/v_bule_line" />
+
+        <EditText
+            android:id="@+id/et_uppass_nwd_two"
+            style="@style/login_pwd_et"
+            android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+            android:hint="@string/registration_edittext_hint_towpassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_registration"
+        style="@style/button_sty"
+        android:layout_marginTop="@dimen/login_margin_registration"
+        android:text="@string/affirm_chage"
+        android:textColor="@color/background_white" />
+
+</LinearLayout>

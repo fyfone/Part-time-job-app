@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/Jianzhi/!svn/ver/455/jzq3.0/src/com/sq/jzq/adapter
+END
+ViewPagerScroller.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/102/jzq3.0/src/com/sq/jzq/adapter/ViewPagerScroller.java
+END
+MyMessageInvitationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Jianzhi/!svn/ver/187/jzq3.0/src/com/sq/jzq/adapter/MyMessageInvitationAdapter.java
+END
+JobAttentionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Jianzhi/!svn/ver/221/jzq3.0/src/com/sq/jzq/adapter/JobAttentionAdapter.java
+END
+MyMsgInvitationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Jianzhi/!svn/ver/421/jzq3.0/src/com/sq/jzq/adapter/MyMsgInvitationAdapter.java
+END
+VipWantedAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Jianzhi/!svn/ver/253/jzq3.0/src/com/sq/jzq/adapter/VipWantedAdapter.java
+END
+VieListUsersAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Jianzhi/!svn/ver/269/jzq3.0/src/com/sq/jzq/adapter/VieListUsersAdapter.java
+END
+MyAttentionCompanyAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Jianzhi/!svn/ver/434/jzq3.0/src/com/sq/jzq/adapter/MyAttentionCompanyAdapter.java
+END
+ComapanyResumeCollectiondapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Jianzhi/!svn/ver/423/jzq3.0/src/com/sq/jzq/adapter/ComapanyResumeCollectiondapter.java
+END
+JobListUserAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/215/jzq3.0/src/com/sq/jzq/adapter/JobListUserAdapter.java
+END
+JobListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Jianzhi/!svn/ver/289/jzq3.0/src/com/sq/jzq/adapter/JobListAdapter.java
+END
+VipRecruitersAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Jianzhi/!svn/ver/455/jzq3.0/src/com/sq/jzq/adapter/VipRecruitersAdapter.java
+END
+SqjlAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Jianzhi/!svn/ver/421/jzq3.0/src/com/sq/jzq/adapter/SqjlAdapter.java
+END
+MyAttentionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/187/jzq3.0/src/com/sq/jzq/adapter/MyAttentionAdapter.java
+END
+SelectListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/339/jzq3.0/src/com/sq/jzq/adapter/SelectListAdapter.java
+END
+MyEvaluationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Jianzhi/!svn/ver/331/jzq3.0/src/com/sq/jzq/adapter/MyEvaluationAdapter.java
+END
+MyMsgCircleAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/424/jzq3.0/src/com/sq/jzq/adapter/MyMsgCircleAdapter.java
+END
+SelectLocaAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/339/jzq3.0/src/com/sq/jzq/adapter/SelectLocaAdapter.java
+END
+getLocaAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Jianzhi/!svn/ver/374/jzq3.0/src/com/sq/jzq/adapter/getLocaAdapter.java
+END
+MyMessageAttentionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Jianzhi/!svn/ver/187/jzq3.0/src/com/sq/jzq/adapter/MyMessageAttentionAdapter.java
+END
+MyMsgAttentionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Jianzhi/!svn/ver/421/jzq3.0/src/com/sq/jzq/adapter/MyMsgAttentionAdapter.java
+END
+VipPositionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/442/jzq3.0/src/com/sq/jzq/adapter/VipPositionAdapter.java
+END
+MyAttentionIndividualAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Jianzhi/!svn/ver/331/jzq3.0/src/com/sq/jzq/adapter/MyAttentionIndividualAdapter.java
+END
+CompanyInviteRecordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Jianzhi/!svn/ver/421/jzq3.0/src/com/sq/jzq/adapter/CompanyInviteRecordAdapter.java
+END
+ComapanyReceiveCollectiondapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Jianzhi/!svn/ver/424/jzq3.0/src/com/sq/jzq/adapter/ComapanyReceiveCollectiondapter.java
+END
+ViewPagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Jianzhi/!svn/ver/102/jzq3.0/src/com/sq/jzq/adapter/ViewPagerAdapter.java
+END
+VipListUserAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/265/jzq3.0/src/com/sq/jzq/adapter/VipListUserAdapter.java
+END
+InviteRecordAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Jianzhi/!svn/ver/421/jzq3.0/src/com/sq/jzq/adapter/InviteRecordAdapter.java
+END

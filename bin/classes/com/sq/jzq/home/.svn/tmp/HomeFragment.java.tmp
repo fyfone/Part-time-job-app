@@ -1,0 +1,267 @@
+package com.sq.jzq.home;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Vibrator;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
+import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+import com.baidu.location.GeofenceClient;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption.LocationMode;
+import com.sq.jzq.Globals;
+import com.sq.jzq.HomeActivity;
+import com.sq.jzq.HomeActivity.ViewPagerAdapter;
+import com.sq.jzq.R;
+import com.sq.jzq.adapter.JobListAdapter;
+import com.sq.jzq.bean.JobResult;
+import com.sq.jzq.bean.JobResult.Job;
+import com.sq.jzq.company.MyFragmentCompany;
+import com.sq.jzq.home.adapter.HomeGVAdapter;
+import com.sq.jzq.home.adapter.ImgAdapter;
+import com.sq.jzq.job.JobDetailActivity;
+import com.sq.jzq.job.MapActivity;
+import com.sq.jzq.util.GsonUtils;
+import com.sq.jzq.util.VolleyUtil;
+import com.sq.jzq.views.ListViewForScrollView;
+import com.sq.jzq.views.MyGallery;
+
+public class HomeFragment extends Fragment {
+	private LinearLayout llHead;
+	public ViewPager home_viewpager;
+	private MyGallery gallery = null;
+	private ArrayList<Integer> imgList;
+	private ArrayList<ImageView> portImg;
+	private LinearLayout llMakeMoney;
+	private ListViewForScrollView lvHome;
+	private JobListAdapter ja;
+	private String localCode = "320600"; // 地区代码
+	private RelativeLayout rl_home_viewpager;
+	private RequestQueue mRequestQueue;
+	private ScrollView sv;
+	/**
+	 * 存储上一个选择项的Index
+	 */
+	private int preSelImgIndex = 0;
+	private LinearLayout ll_focus_indicator_container = null;
+	View view;
+	public GridView gv_houme;
+	public LocationClient mLocationClient;
+	public GeofenceClient mGeofenceClient;
+	public MyLocationListener mMyLocationListener;
+	private LocationMode tempMode = LocationMode.Hight_Accuracy;
+	public Vibrator mVibrator;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater,
+			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+		view = inflater.inflate(R.layout.fragment_home, container, false);
+		mRequestQueue = Volley.newRequestQueue(getActivity());
+		initLocation();
+		if (view != null) {
+
+			sv = (ScrollView)view.findViewById(R.id.fh_sv);
+			sv.smoothScrollTo(0, 0);
+			lvHome = (ListViewForScrollView) view.findViewById(R.id.home_jztj);
+			rl_home_viewpager = (RelativeLayout) view
+					.findViewById(R.id.rl_home_viewpager);
+			LinearLayout button = (LinearLayout) view
+					.findViewById(R.id.bt_login);
+
+			lvHome.setOnItemClickListener(new OnItemClickListener() {
+
+				@Override
+				public void onItemClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					Intent intent = new Intent();
+					intent.setClass(getActivity(), JobDetailActivity.class);
+					intent.putExtra(Globals.K_ID, Long.toString(arg3));
+					intent.putExtra(Globals.K_TYPE, Globals.JSON_MODE_JZLIST);
+					startActivity(intent);
+				}
+
+			});
+
+			button.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+
+					Toast.makeText(
+							getActivity(),
+							mMyLocationListener.getLatitude() + ";"
+									+ mMyLocationListener.getLongitude() + "",
+							0).show();
+
+					getActivity().startActivity(
+							new Intent(getActivity(), MapActivity.class));
+				}
+			});
+
+			// llMakeMoney.setOnClickListener(new OnClickListener() {
+			//
+			// @Override
+			// public void onClick(View arg0) {
+			// startActivity(new Intent(getActivity(),
+			// MakeMoneyActivity.class));
+			//
+			// }
+			// });
+			initCarousel();
+			initGridView();
+			loadData();
+		}
+
+		DisplayMetrics dm = new DisplayMetrics();
+		// 取得窗口属性
+		getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
+		// 窗口的高度
+		int screenWidth = dm.widthPixels;
+		ViewGroup.LayoutParams para = rl_home_viewpager.getLayoutParams();
+		para.height = screenWidth / 20 * 9;
+		para.width = screenWidth;
+		rl_home_viewpager.setLayoutParams(para);
+
+		return view;
+	}
+
+	public void initLocation() {
+		mLocationClient = new LocationClient(getActivity()
+				.getApplicationContext());
+		mMyLocationListener = new MyLocationListener();
+		mLocationClient.registerLocationListener(mMyLocationListener);
+		mGeofenceClient = new GeofenceClient(getActivity()
+				.getApplicationContext());
+		mVibrator = (Vibrator) getActivity().getApplicationContext()
+				.getSystemService(Service.VIBRATOR_SERVICE);
+		if (mLocationClient != null) {
+			mLocationClient.start();
+
+		}
+
+	}
+
+	private void loadData() {
+		Map<String, String> params = new HashMap<String, String>();
+		params.put(Globals.WS_POST_KEY, "{\"Ac\":\"ZWTJ\",\"Para\":{\"A\":\""
+				+ localCode + "\"}}");
+
+		new VolleyUtil() {
+
+			public void analysisData(String response) {
+				JobResult s = GsonUtils.json2bean(response, JobResult.class);
+				if (s == null || !(s.Stu == 1)) {
+					Toast.makeText(getActivity(), Globals.SER_ERROR,
+							Globals.TOAST_SHORT).show();
+				} else {
+					List<Job> jobs = s.Rst.Lst;
+					if (jobs.size() > 0) {
+						JobListAdapter ja = new JobListAdapter(getActivity(),
+								jobs);
+						lvHome.setAdapter(ja);
+					} else {
+						Toast.makeText(getActivity(), R.string.job_no_info,
+								Globals.TOAST_SHORT);
+					}
+				}
+
+			}
+
+		}.volleyStringRequestPost(getActivity(), params);
+	}
+
+	// 处理首页宫格
+	public void initGridView() {
+		gv_houme = (GridView) view.findViewById(R.id.gv_houme);
+		this.gv_houme.setAdapter(new HomeGVAdapter(getActivity()));
+		gv_houme.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+
+				HomeActivity.jobType = (arg2+1)+",";
+				HomeActivity.viewPager.setCurrentItem(1);
+				HomeActivity.mViewItems.set(1, new JobFragment());
+				HomeActivity.fragmentsUpdateFlag[1] = true;
+				HomeActivity.viewAdapter.notifyDataSetChanged();
+				
+			}
+
+		});
+	}
+
+	
+	
+	// 处理轮播图
+	public void initCarousel() {
+		ll_focus_indicator_container = (LinearLayout) view
+				.findViewById(R.id.ll_focus_indicator_container);
+		imgList = new ArrayList<Integer>();
+		imgList.add(R.drawable.img1);
+		imgList.add(R.drawable.img2);
+		imgList.add(R.drawable.img3);
+		InitFocusIndicatorContainer();
+		gallery = (MyGallery) view.findViewById(R.id.gallery);
+		gallery.setAdapter(new ImgAdapter(getActivity(), imgList));
+		gallery.setFocusable(true);
+		gallery.setOnItemSelectedListener(new OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int selIndex, long arg3) {
+				selIndex = selIndex % imgList.size();
+				// 修改上一次选中项的背景
+				portImg.get(preSelImgIndex).setImageResource(
+						R.drawable.ic_focus);
+				// 修改当前选中项的背景
+				portImg.get(selIndex).setImageResource(
+						R.drawable.ic_focus_select);
+				preSelImgIndex = selIndex;
+			}
+
+			public void onNothingSelected(AdapterView<?> arg0) {
+			}
+		});
+	}
+
+	// 处理底部轮播点
+	private void InitFocusIndicatorContainer() {
+		portImg = new ArrayList<ImageView>();
+		for (int i = 0; i < imgList.size(); i++) {
+			ImageView localImageView = new ImageView(getActivity());
+			localImageView.setId(i);
+			ImageView.ScaleType localScaleType = ImageView.ScaleType.FIT_XY;
+			localImageView.setScaleType(localScaleType);
+			LinearLayout.LayoutParams localLayoutParams = new LinearLayout.LayoutParams(
+					24, 24);
+			localImageView.setLayoutParams(localLayoutParams);
+			localImageView.setPadding(5, 5, 5, 5);
+			localImageView.setImageResource(R.drawable.ic_focus);
+			portImg.add(localImageView);
+			this.ll_focus_indicator_container.addView(localImageView);
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff5"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/select_titlebar"
+        style="@style/title_bar_font"
+        android:text="相册" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_image_bucket.xml -->

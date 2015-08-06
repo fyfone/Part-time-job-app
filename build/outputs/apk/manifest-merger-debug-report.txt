@@ -1,0 +1,385 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:7:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:9:9
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:8:9
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from AndroidManifest.xml:23:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:25:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from AndroidManifest.xml:51:5
+	android:name
+		ADDED from AndroidManifest.xml:51:22
+uses-permission#android.permission.READ_LOGS
+ADDED from AndroidManifest.xml:54:5
+	android:name
+		ADDED from AndroidManifest.xml:54:22
+application
+ADDED from AndroidManifest.xml:57:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+	android:label
+		ADDED from AndroidManifest.xml:61:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:59:9
+	android:icon
+		ADDED from AndroidManifest.xml:60:9
+	android:theme
+		ADDED from AndroidManifest.xml:62:9
+	android:name
+		ADDED from AndroidManifest.xml:58:9
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from AndroidManifest.xml:63:9
+	android:name
+		ADDED from AndroidManifest.xml:64:13
+	android:value
+		ADDED from AndroidManifest.xml:65:13
+activity#com.sq.jzq.SplashScreenActivity
+ADDED from AndroidManifest.xml:67:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:71:13
+	android:icon
+		ADDED from AndroidManifest.xml:69:13
+	android:name
+		ADDED from AndroidManifest.xml:68:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:70:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:72:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:73:17
+	android:name
+		ADDED from AndroidManifest.xml:73:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:75:17
+	android:name
+		ADDED from AndroidManifest.xml:75:27
+activity#com.sq.jzq.HomeActivity
+ADDED from AndroidManifest.xml:79:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:83:13
+	android:label
+		ADDED from AndroidManifest.xml:81:13
+	android:theme
+		ADDED from AndroidManifest.xml:84:13
+	android:name
+		ADDED from AndroidManifest.xml:80:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:82:13
+activity#com.sq.jzq.job.MapActivity
+ADDED from AndroidManifest.xml:87:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:91:13
+	android:label
+		ADDED from AndroidManifest.xml:89:13
+	android:theme
+		ADDED from AndroidManifest.xml:92:13
+	android:name
+		ADDED from AndroidManifest.xml:88:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:90:13
+activity#com.sq.jzq.my.LoginOneActivity
+ADDED from AndroidManifest.xml:95:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:99:13
+	android:label
+		ADDED from AndroidManifest.xml:97:13
+	android:theme
+		ADDED from AndroidManifest.xml:100:13
+	android:name
+		ADDED from AndroidManifest.xml:96:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:98:13
+activity#com.sq.jzq.my.LoginTowActivity
+ADDED from AndroidManifest.xml:102:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:106:13
+	android:label
+		ADDED from AndroidManifest.xml:104:13
+	android:theme
+		ADDED from AndroidManifest.xml:107:13
+	android:name
+		ADDED from AndroidManifest.xml:103:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:105:13
+activity#com.sq.jzq.my.RegistrationActivity
+ADDED from AndroidManifest.xml:109:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:113:13
+	android:label
+		ADDED from AndroidManifest.xml:111:13
+	android:theme
+		ADDED from AndroidManifest.xml:114:13
+	android:name
+		ADDED from AndroidManifest.xml:110:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:112:13
+activity#com.sq.jzq.my.RegistrationAgreementActivity
+ADDED from AndroidManifest.xml:116:9
+	android:label
+		ADDED from AndroidManifest.xml:118:13
+	android:name
+		ADDED from AndroidManifest.xml:117:13
+activity#com.sq.jzq.job.SelActivity
+ADDED from AndroidManifest.xml:120:9
+	android:name
+		ADDED from AndroidManifest.xml:120:19
+activity#com.sq.jzq.job.JobDetailActivity
+ADDED from AndroidManifest.xml:122:9
+	android:label
+		ADDED from AndroidManifest.xml:124:13
+	android:name
+		ADDED from AndroidManifest.xml:123:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:125:13
+activity#com.sq.jzq.my.MyDataActivity
+ADDED from AndroidManifest.xml:128:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:131:13
+	android:label
+		ADDED from AndroidManifest.xml:130:13
+	android:name
+		ADDED from AndroidManifest.xml:129:13
+activity#com.sq.jzq.my.MyMsgActivity
+ADDED from AndroidManifest.xml:133:9
+	android:label
+		ADDED from AndroidManifest.xml:135:13
+	android:name
+		ADDED from AndroidManifest.xml:134:13
+activity#com.sq.jzq.my.MyEvaluateActivity
+ADDED from AndroidManifest.xml:137:9
+	android:label
+		ADDED from AndroidManifest.xml:139:13
+	android:name
+		ADDED from AndroidManifest.xml:138:13
+activity#com.sq.jzq.my.MyCollectActivity
+ADDED from AndroidManifest.xml:141:9
+	android:label
+		ADDED from AndroidManifest.xml:143:13
+	android:name
+		ADDED from AndroidManifest.xml:142:13
+activity#com.sq.jzq.my.InviteRecordActivity
+ADDED from AndroidManifest.xml:145:9
+	android:label
+		ADDED from AndroidManifest.xml:147:13
+	android:name
+		ADDED from AndroidManifest.xml:146:13
+activity#com.sq.jzq.my.MySetPageActivity
+ADDED from AndroidManifest.xml:149:9
+	android:label
+		ADDED from AndroidManifest.xml:151:13
+	android:name
+		ADDED from AndroidManifest.xml:150:13
+activity#com.sq.jzq.my.MySetDisclaimerActivity
+ADDED from AndroidManifest.xml:153:9
+	android:label
+		ADDED from AndroidManifest.xml:155:13
+	android:name
+		ADDED from AndroidManifest.xml:154:13
+activity#com.sq.jzq.my.MySetOpinionActivity
+ADDED from AndroidManifest.xml:157:9
+	android:label
+		ADDED from AndroidManifest.xml:159:13
+	android:name
+		ADDED from AndroidManifest.xml:158:13
+activity#com.sq.jzq.my.ChagePwdActivity
+ADDED from AndroidManifest.xml:161:9
+	android:label
+		ADDED from AndroidManifest.xml:163:13
+	android:name
+		ADDED from AndroidManifest.xml:162:13
+activity#com.sq.jzq.my.MySetActivity
+ADDED from AndroidManifest.xml:165:9
+	android:label
+		ADDED from AndroidManifest.xml:167:13
+	android:name
+		ADDED from AndroidManifest.xml:166:13
+activity#com.sq.jzq.my.MyResumeActivity
+ADDED from AndroidManifest.xml:169:9
+	android:label
+		ADDED from AndroidManifest.xml:171:13
+	android:name
+		ADDED from AndroidManifest.xml:170:13
+activity#com.sq.jzq.my.SqjlActivity
+ADDED from AndroidManifest.xml:173:9
+	android:label
+		ADDED from AndroidManifest.xml:175:13
+	android:name
+		ADDED from AndroidManifest.xml:174:13
+activity#com.sq.jzq.my.InvitationInterviewActivity
+ADDED from AndroidManifest.xml:177:9
+	android:label
+		ADDED from AndroidManifest.xml:179:13
+	android:name
+		ADDED from AndroidManifest.xml:178:13
+activity#com.sq.jzq.my.EvaluationActivity
+ADDED from AndroidManifest.xml:181:9
+	android:label
+		ADDED from AndroidManifest.xml:183:13
+	android:name
+		ADDED from AndroidManifest.xml:182:13
+activity#com.sq.jzq.my.MyGzActivity
+ADDED from AndroidManifest.xml:185:9
+	android:label
+		ADDED from AndroidManifest.xml:187:13
+	android:name
+		ADDED from AndroidManifest.xml:186:13
+activity#com.sq.jzq.vip.VipCompanyDetailsActivity
+ADDED from AndroidManifest.xml:190:9
+	android:label
+		ADDED from AndroidManifest.xml:192:13
+	android:name
+		ADDED from AndroidManifest.xml:191:13
+activity#com.sq.jzq.my.SelectPicActivity
+ADDED from AndroidManifest.xml:194:9
+	android:label
+		ADDED from AndroidManifest.xml:196:13
+	android:theme
+		ADDED from AndroidManifest.xml:197:13
+	android:name
+		ADDED from AndroidManifest.xml:195:13
+activity#com.sq.jzq.company.ChangePwdActivity
+ADDED from AndroidManifest.xml:200:9
+	android:label
+		ADDED from AndroidManifest.xml:202:13
+	android:name
+		ADDED from AndroidManifest.xml:201:13
+activity#com.sq.jzq.company.CompanyResumeActivity
+ADDED from AndroidManifest.xml:204:9
+	android:label
+		ADDED from AndroidManifest.xml:206:13
+	android:name
+		ADDED from AndroidManifest.xml:205:13
+activity#com.sq.jzq.company.CompanyInviteRecordActivity
+ADDED from AndroidManifest.xml:208:9
+	android:label
+		ADDED from AndroidManifest.xml:210:13
+	android:name
+		ADDED from AndroidManifest.xml:209:13
+activity#com.sq.jzq.company.MyDataCompanyActivity
+ADDED from AndroidManifest.xml:212:9
+	android:label
+		ADDED from AndroidManifest.xml:214:13
+	android:name
+		ADDED from AndroidManifest.xml:213:13
+activity#com.sq.jzq.company.CompanyResumeCollectionActivity
+ADDED from AndroidManifest.xml:216:9
+	android:label
+		ADDED from AndroidManifest.xml:218:13
+	android:name
+		ADDED from AndroidManifest.xml:217:13
+activity#com.sq.jzq.company.ComanyMsgActivity
+ADDED from AndroidManifest.xml:220:9
+	android:label
+		ADDED from AndroidManifest.xml:222:13
+	android:name
+		ADDED from AndroidManifest.xml:221:13
+activity#com.example.testpic.ImageGridActivity
+ADDED from AndroidManifest.xml:225:9
+	android:name
+		ADDED from AndroidManifest.xml:225:19
+activity#com.example.testpic.TestPicActivity
+ADDED from AndroidManifest.xml:227:9
+	android:configChanges
+		ADDED from AndroidManifest.xml:229:13
+	android:name
+		ADDED from AndroidManifest.xml:228:13
+activity#com.example.testpic.PhotoActivity
+ADDED from AndroidManifest.xml:231:9
+	android:name
+		ADDED from AndroidManifest.xml:231:19
+activity#com.example.testpic.PublishedActivity
+ADDED from AndroidManifest.xml:233:9
+	android:configChanges
+		ADDED from AndroidManifest.xml:235:13
+	android:name
+		ADDED from AndroidManifest.xml:234:13
+service#com.baidu.location.f
+ADDED from AndroidManifest.xml:238:9
+	android:process
+		ADDED from AndroidManifest.xml:241:13
+	android:enabled
+		ADDED from AndroidManifest.xml:240:13
+	android:name
+		ADDED from AndroidManifest.xml:239:13
+activity#com.sq.jzq.home.GetLocaActivity
+ADDED from AndroidManifest.xml:244:9
+	android:theme
+		ADDED from AndroidManifest.xml:246:13
+	android:name
+		ADDED from AndroidManifest.xml:245:13

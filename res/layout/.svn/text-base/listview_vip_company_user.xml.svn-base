@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:layout_marginTop="@dimen/vip_recruiters_title_margin_leftOf"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.sq.jzq.views.CircularImage
+            android:id="@+id/iv_company_evaluation_head"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/logo_d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vip_recruiters_title_margin_leftOf" >
+
+                <TextView
+                    android:id="@+id/sqjl_item_title"
+                    style="@style/item_title"
+                    android:text="服装模特"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/sqjl_item_date"
+                    style="@style/item_date"
+                    android:text="2015-03-30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vip_recruiters_title_margin_top"
+                android:layout_marginLeft="@dimen/vip_recruiters_title_margin_leftOf"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_itme_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职位：模特"
+                    android:textColor="@color/text_888"
+                    android:textSize="@dimen/hint_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_company_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vip_recruiters_title_margin_top"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:layout_marginTop="@dimen/vip_recruiters_title_margin_top"
+        android:text="面试官面试官面试官"
+        android:textColor="@color/text_333333"
+        android:textSize="@dimen/hint_text_size" />
+
+    <include layout="@layout/v_grey_line" />
+
+</LinearLayout>

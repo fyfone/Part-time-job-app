@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:descendantFocusability="blocksDescendants"
+   >
+
+    <RelativeLayout
+        android:id="@+id/lisla_rl"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_left_right_margin"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:layout_marginBottom="@dimen/item_title_bott"
+        android:layout_marginRight="@dimen/item_left_right_margin" >
+
+        <CheckBox
+            android:id="@+id/lisla_chk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbookselect"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/lisla_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lisla_chk"
+            android:gravity="center"
+            android:text="选项名称" 
+            android:textSize="@dimen/text_size"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_style"
+        android:layout_below="@id/lisla_rl"/>
+
+</RelativeLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/listview_select_item.xml -->

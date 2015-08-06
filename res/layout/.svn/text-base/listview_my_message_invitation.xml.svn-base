@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:layout_marginTop="@dimen/vip_recruiters_title_margin_leftOf"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vip_recruiters_title_margin_leftOf"
+                android:layout_marginTop="@dimen/item_title_right"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/sqjl_item_loca"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/item_title_right"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="模特（90元/天）"
+                    android:textSize="@dimen/text_size" />
+
+                <Button
+                    android:id="@+id/sqjl_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/icon_right"
+                    android:background="@drawable/invite_shch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vip_recruiters_title_margin_leftOf"
+                android:layout_marginTop="@dimen/item_bottom"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_messg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/item_title_right"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="北京艺术钱箱文化传播有限公司"
+                    android:textSize="@dimen/hint_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_title_right"
+                android:layout_marginLeft="@dimen/vip_recruiters_title_margin_leftOf"
+                android:layout_marginTop="@dimen/item_title_right"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_msg_invit_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/item_title_right"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="北京市海淀区"
+                    android:textColor="@color/text_888"
+                    android:textSize="@dimen/hint_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_msg_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="有新职位更新"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/hint_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/v_grey_line" />
+    </LinearLayout>
+
+</LinearLayout>

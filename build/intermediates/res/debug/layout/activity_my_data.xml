@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/my_titlebar"
+        style="@style/title_bar_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人资料"
+        app:rightButtonBgImg="@drawable/sure"
+        app:rightButtonBgImgPress="@drawable/sure_press"
+        app:rightButtonEnable="true" >
+    </com.sq.jzq.views.TitleBarView>
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <com.sq.jzq.views.CircularImage
+                    android:id="@+id/iv_my_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="@dimen/my_personal_head_margin_top"
+                    android:layout_marginTop="@dimen/my_personal_head_margin_top"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_d" />
+            </LinearLayout>
+
+            <include layout="@layout/v_grey_bg_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_personal_item_margin_top"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/my_msg"
+                    style="@style/my_personal_imte"
+                    android:layout_width="match_parent"
+                    android:background="@color/background_white" >
+
+                    <LinearLayout
+                        style="@style/my_ll_item"
+                        android:layout_marginLeft="@dimen/my_ll_item_about" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/information_jbxx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/my_ll_item_tv_size"
+                            android:text="@string/my_personal_basic"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_name" />
+
+                    <EditText
+                        android:id="@+id/et_my_name"
+                        style="@style/my_edittext_ll"
+                        android:inputType="none" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_sex" />
+
+                  
+                        <RadioGroup
+                        android:id="@+id/md_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="@dimen/item_left_right_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/md_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:checked="true"
+                            android:text="男" />
+
+                        <RadioButton
+                            android:id="@+id/md_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="女" />
+                        </RadioGroup>
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_age" />
+
+                    <EditText
+                        android:id="@+id/et_my_age"
+                        style="@style/my_edittext_ll"
+                        android:inputType="number"
+                        android:maxLength="3" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_email" />
+
+                    <EditText
+                        android:id="@+id/et_my_ems"
+                        style="@style/my_edittext_ll" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_qq" />
+
+                    <EditText
+                        android:id="@+id/et_my_qq"
+                        style="@style/my_edittext_ll" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_contact" />
+
+                    <EditText
+                        android:id="@+id/et_my_contact"
+                        style="@style/my_edittext_ll" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_Identity" />
+
+                    <EditText
+                        android:id="@+id/et_my_id_number"
+                        style="@style/my_edittext_ll" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/my_personal_photo_margin"
+                    android:layout_marginLeft="@dimen/my_ll_item_about"
+                    android:layout_marginRight="@dimen/my_ll_item_about"
+                    android:layout_marginTop="@dimen/my_personal_photo_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_personal_identity_photo" />
+
+                    <ImageView
+                        android:id="@+id/iv_id_front"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="@dimen/my_set_page_margin"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_id_behind"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="@dimen/my_set_page_margin"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/v_grey_bg_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_personal_item_margin_top"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <LinearLayout
+                        style="@style/my_ll_item"
+                        android:layout_marginLeft="@dimen/my_ll_item_about" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/information_jyxx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/my_ll_item_tv_size"
+                            android:text="@string/my_personal_education"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <LinearLayout
+                    style="@style/my_personal_imte"
+                    android:background="@color/background_white" >
+
+                    <TextView
+                        style="@style/my_edittext_left"
+                        android:text="@string/my_personal_school" />
+
+                    <EditText
+                        android:id="@+id/et_my_school"
+                        style="@style/my_edittext_ll" />
+                </LinearLayout>
+
+                <include layout="@layout/v_grey_line" />
+
+                <include layout="@layout/v_grey_bg_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my_personal_item_margin_top"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        style="@style/my_personal_imte"
+                        android:background="@color/background_white" >
+
+                        <LinearLayout
+                            style="@style/my_ll_item"
+                            android:layout_marginLeft="@dimen/my_ll_item_about" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/information_qt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/my_ll_item_tv_size"
+                                android:text="@string/my_personal_miscellaneous"
+                                android:textSize="@dimen/text_size" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <include layout="@layout/v_grey_line" />
+
+                    <LinearLayout
+                        android:id="@+id/my_data_qsz"
+                        style="@style/my_personal_imte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/my_ll_item_about"
+                        android:layout_marginRight="@dimen/my_ll_item_about"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/my_personal_photo" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/my_sjx" />
+                    </LinearLayout>
+
+                    <include layout="@layout/v_grey_bg_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/my_personal_item_margin_top"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            style="@style/my_personal_imte"
+                            android:background="@color/background_white" >
+
+                            <LinearLayout
+                                style="@style/my_ll_item"
+                                android:layout_marginLeft="@dimen/my_ll_item_about" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/information_zhzhshm" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/my_ll_item_tv_size"
+                                    android:scaleType="fitXY"
+                                    android:text="@string/my_personal_statement"
+                                    android:textSize="@dimen/text_size" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <include layout="@layout/v_grey_line" />
+
+                        <RelativeLayout
+                            style="@style/my_personal_imte"
+                            android:background="@color/background_white" >
+
+                            <LinearLayout
+                                style="@style/my_ll_item"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/my_ll_item_about"
+                                android:layout_marginRight="@dimen/my_ll_item_about" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="兼职圈不会公开你的个人信息。请可能填完整并保证真实有效，有助于提供兼职申请成功率。"
+                                    android:textColor="@color/text_888"
+                                    android:textSize="@dimen/text_size" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_my_data.xml -->

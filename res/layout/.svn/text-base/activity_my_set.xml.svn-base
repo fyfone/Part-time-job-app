@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:text="设置" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <RelativeLayout
+        android:id="@+id/my_set_opinion"
+        style="@style/my_rl_item" >
+
+        <LinearLayout style="@style/my_ll_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:text="@string/title_set_opinion"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/my_ll_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_left_right_margin" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_sjx" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/v_grey_line" />
+
+    <RelativeLayout
+        android:id="@+id/my_set_edition"
+        style="@style/my_rl_item" >
+
+        <LinearLayout style="@style/my_ll_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:text="@string/title_set_edition"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ms_version"
+            style="@style/my_ll_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_left_right_margin" >
+
+            <TextView
+                android:id="@+id/my_set_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/title_set_version"
+                android:textColor="@color/text_888"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_sjx" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/v_grey_line" />
+
+    <RelativeLayout
+        android:id="@+id/my_set_page"
+        style="@style/my_rl_item" >
+
+        <LinearLayout style="@style/my_ll_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:text="@string/title_set_page"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/my_ll_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_left_right_margin" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_sjx" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/v_grey_line" />
+
+    <RelativeLayout
+        android:id="@+id/my_set_disclaimer"
+        style="@style/my_rl_item" >
+
+        <LinearLayout style="@style/my_ll_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:text="@string/title_set_disclaimer"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/my_ll_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_left_right_margin" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_sjx" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/v_grey_line" />
+
+    <RelativeLayout
+        android:id="@+id/my_set_Signout"
+        style="@style/my_rl_item" >
+
+        <LinearLayout style="@style/my_ll_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:text="@string/title_set_Signout"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/v_grey_line" />
+
+</LinearLayout>

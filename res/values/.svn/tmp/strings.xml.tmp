@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 全局 -->
+    <string name="app_name">兼职圈</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- 主页 -->
+    <string name="home">首页</string>
+    <string name="my">我的</string>
+    <string name="guide_text">找兼职，就到兼职圈!</string>
+    <string name="guide_button_jobhunter">求职者</string>
+    <string name="guide_button_recruiter">招聘者</string>
+    <string name="job">职位</string>
+    <string name="vip">会员</string>
+
+    <!-- 主页 -->
+    <string name="home_part_tv">兼职推荐</string>
+    <string name="home_gv_questionnaire">调查问卷</string>
+    <string name="home_gv_assist">会场协助</string>
+    <string name="home_gv_waiter">服务员</string>
+    <string name="home_gv_ceremony">礼仪</string>
+    <string name="home_gv_distributed">派发员</string>
+    <string name="home_gv_model">模特</string>
+    <string name="home_gv_phone">电话销售</string>
+    <string name="home_gv_promotion">促销员</string>
+
+    <!-- 职位 -->
+    <string name="job_sel_job">选择职位</string>
+    <string name="job_sel_loca">选择地区</string>
+    <string name="job_no_info">没有相应的信息</string>
+
+    <!-- 登陆 -->
+    <string name="title_login">登录</string>
+    <string name="login_but_forget">注册</string>
+    <string name="login_but_forget_password">忘记密码</string>
+    <string name="login_edittext_hint_login">输入手机号/邮箱</string>
+    <string name="login_edittext_hint_password">输入密码</string>
+    <string name="login_but_registration">忘记密码</string>
+    <string name="registration_edittext_hint_phone">输入手机号</string>
+    <string name="registration_edittext_hint_code">输入验证码</string>
+    <string name="registration_edittext_hint_old_password">输入旧密码</string>
+    <string name="registration_edittext_hint_password">输入密码</string>
+    <string name="registration_edittext_hint_towpassword">再次输入新密码</string>
+    <string name="registration_bt_code">发送验证码</string>
+    <string name="affirm_chage">确认修改</string>
+    <string name="chage_pwd">修改密码</string>
+    <!-- 我的 -->
+    <string name="title_my">我的</string>
+    <string name="title_ll_item_tv">个人资料</string>
+    <string name="title_my_im">我的消息</string>
+    <string name="title_my_evaluation">我的评价</string>
+    <string name="title_my_collection">我的收藏</string>
+    <string name="title_my_modify">修改密码</string>
+    <string name="title_my_resume">个人简历</string>
+    <string name="title_my_record_bar_apply">申请记录</string>
+    <string name="title_my_record_bar_invitation">邀约记录</string>
+    <string name="title_my_record_bar_attention">我的关注</string>
+    <string name="title_sqjl">申请记录</string>
+    <string name="title_wdgz">我的关注</string>
+    <string name="title_evaluation_text">北京艺术钱箱科技有限公司</string>
+    <string name="title_set_opinion">意见反馈</string>
+    <string name="title_set_edition">版本检测</string>
+    <string name="title_set_page">关于我们</string>
+    <string name="title_set_disclaimer">找事365免责声明</string>
+    <string name="title_set_Signout">退出登陆</string>
+    <string name="title_set_version">当前版本号3.0</string>
+    <string name="my_personal_basic">基本信息</string>
+    <string name="my_personal_education">教育信息</string>
+    <string name="my_personal_miscellaneous">其他</string>
+    <string name="my_personal_statement">郑重声明</string>
+    <string name="my_personal_photo">全身照：\t\t\t\t\t</string>
+    <string name="my_personal_identity_photo">身份证照片：</string>
+    <string name="my_personal_name">姓名：</string>
+    <string name="my_personal_xl">学历：</string>
+    <string name="my_personal_school">学校：</string>
+    <string name="my_personal_sex">性别：</string>
+    <string name="my_personal_notset">未设置</string>
+    <string name="my_personal_age">年龄：</string>
+    <string name="my_personal_contact">联系方式：</string>
+    <string name="my_personal_Identity">身份证号：</string>
+    <string name="my_personal_qq">Q\t\tQ：</string>
+    <string name="my_personal_email">邮箱：</string>
+    <string name="my_attention_company">单位关注</string>
+    <string name="my_attention_position">职位关注</string>
+    <string name="my_message_title_invitation">邀请提醒</string>
+    <string name="my_message_title_attention">关注提醒</string>
+    <string name="my_message_title_circle">圈圈信使</string>
+    <string name="my_message_text_invitation">（邀请面试）</string>
+    <string name="my_set_page">兼    职    圈</string>
+    <string name="disclaimer">免责声明</string>
+    <string name="disclaimer_content">		\u3000\u3000本免责条款为保证找事365正常发展、规避意外风险而设，其初衷为求职者和招聘者提供优质服务，免受不良企图分子的侵害。因此，建议您在接受找事365服务之前，请务必仔细阅读本条款。\n
+		1. 一切网站客户端及移动客户端用户在下载并浏览找事365时均被视为已经仔细阅读本条款并完全同意，均被视为自愿接受找事365相关声明和用户服务协议的约束。\n
+		2. 找事365转载的文字、图片、音视频等资料均由相关用户提供，其真实性、准确性和合法性由信息发布人负责，找事365不提供任何保证，并不承担任何法律责任；找事365所转载的文字、图片、音视频等资料，如果侵犯了第三方的知识产权或其他权利，责任由作者或转载者本人承担，找事365对此不承担责任。\n
+		3. 由于与找事365链接的其他客户端所造成的个人资料泄露及由此导致的任何法律争议和后果，找事365均可免责。\n
+		4. 由于用户将个人密码告知他人或与他人共享注册账户，由此导致的任何个人资料泄露，找事365均不负任何责任。\n
+		5. 当政府、司法机关依照法定程序要求找事365披露个人资料时，找事365将根据执法单位之要求或为公共安全之目的提供个人资料，在此情况下而导致的任何披露，找事365均可免责。\n
+		6. 找事365如因系统维护升级需暂停服务时，将事先公告。若因通信线路及找事365控制范围外的硬件故障或其它不可抗力而导致暂停服务，因暂停服务造成的一切损失，找事365均不负任何责任，但将尽力减少因此给用户造成的损失或影响。\n
+		7. 任何由于手机硬件问题、电脑硬件问题、黑客攻击、病毒侵入或发作、因政府管制而造成的暂时性关闭等影响找事365正常使用，或因上述原因造成的个人资料泄露、丢失、被盗用或被窜改等，找事365均可免责，但将尽力减少因此给用户造成的损失或影响。\n
+		8. 找事365用户使用找事365服务所存在的风险将完全由其本人承担，因违反本声明的规定而触犯中华人民共和国法律的，一切后果自己负责，找事365不承担任何责任。\n
+		9. 找事365及其注册用户及特定网页内的资料提供者拥有此网页内所有资料的版权。未经找事365的明确书面许可，任何人不得复制或在非找事365所属的服务器上做镜像。找事365不保证为向用户提供便利而设置的外部链接的准确性和完整性。找事365保留对侵权行为追究法律责任的权力。\n
+		10. 本声明未涉及的问题参见国家有关法律法规，当本声明与国家法律法规冲突时，以国家法律法规为准。\n
+		11. 本声明以及其修改权、更新权及最终解释权均属找事365所有。\n</string>
+    
+    <string name="agreement_click">我已阅读并同意《找事365软件许可及服务协议》</string>
+    <string name="agreement">找事365软件许可及服务协议</string>
+    <string name="agreement_content">		\u3000\u3000<b>欢迎您使用找事365平台服务！</b>\n <b>特别提示：</b>\n
+		\u3000\u3000在使用找事365平台服务之前，您应当认真阅读并遵守《找事365服务协议》，请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、争议解决和法律适用条款。如您对协议有任何疑问的，应向找事365客服咨询。\n
+		\u3000\u3000当您按照注册页面提示填写信息、阅读并同意本协议且完成全部注册程序后，或您以其他方式实际使用找事365服务时，即表示您已充分阅读、理解并接受本协议的全部内容，并与找事365平台达成协议。您承诺接受并遵守本协议的约定，届时您不应以未阅读本协议的内容或者未获得找事365对您询问的解答等理由，主张本协议无效，或者要求撤销本协议。\n <b>一、协议范围</b>\n
+		\u3000\u3000本协议由求职者、招聘者与找事365经营者共同缔结，本协议具有合同效力。\n
+		\u3000\u3000找事365的经营者是指法律认可的经营找事365平台的责任主体。找事365的软件开发及所属单位及北京思前软件有限公司。本协议是您与找事365之间关于您下载、安装、使用、注册本软件，以及使用找事365相关服务所订立的协议。\n <b>二、关于找事365</b>\n
+		\u3000\u3000找事365的内容是指找事365Web端及移动端向求职者提供的跨平台找兼职的招聘信息以及招聘者发布的招聘职位信息。\n
+		1.	求职者的内容\n
+		\u3000\u3000找事365为求职者提供简历功能、企业招聘信息。求职者在完成兼职工作后，可对企业进行评价。\n
+		2.	招聘者的内容\n
+		\u3000\u3000招聘者提供发布招聘信息之外还提供简历的接收（通过与未通过的简历）。企业在求职者完成工作后，可对求职者进行评价。\n
+		3.	找事365的形式\n
+		\u3000\u3000求职者、招聘者均可通过Web端、移动端使用本软件，在移动端需要下载找事365客户端软件进行个人注册，客户端软件提供包括IOS、Android等多个应用版本，用户必须选择与手机匹配的软件版本。\n
+		\u3000\u3000对于这些软件，找事365给予求职者和招聘者用户专属的、不可转让及非排他性的许可。\n
+		4.	找事365的许可范围\n
+		\u3000\u3000找事365给予您专属的、不可转让及非排他性的许可，以使用本软件。您可以为非商业目的在单一台终端设备上安装、使用、显示、运行本软件。\n
+		\u3000\u3000本条及本协议其他条款未明示授权的其他一切权利仍由找事365保留，您在行使这些权利时须另外取得找事365的书面许可。找事365如果未行使前述任何权利，并不构成对该权利的放弃。\n <b>三、软件的获取</b>\n
+		\u3000\u3000求职者可以直接从手机应用软件上获取本软件，也可进入网址www.zhaoshi365.com 进行注册登录。\n
+		\u3000\u3000招聘者可以直接从手机应用软件上获取本软件，也可进入网址www.zhaoshi365.com进行注册登录。\n
+		\u3000\u3000如果您从未经找事365授权的第三方获取本软件或与本软件名称相同的暗转程序，找事365无法保证能够正常使用，并对因为给您造成的损失不予负责。\n <b>四、软件的安装与卸载</b>\n
+		\u3000\u3000找事365可能为不同的终端设备开发了不同的软件版本，您应该根据实际情况下载合适的版本进行安装。\n
+		\u3000\u3000下载安装程序后，您需要按照该程序提示的步骤正确安装。\n
+		\u3000\u3000如果求职者不再需要使用本软件或者需要安装新版软件，可以自行卸载。如果您愿意帮助找事365改进产品服务，请告知卸载原因。\n <b>五、软件的更新</b>\n
+		\u3000\u3000为了改善用户体验、完善服务内容，找事365将不断努力开发新的服务，并为您不时提供软件更新（这些更新可能会采取软件替换、修改、功能强化、版本升级等形式）。\n
+		\u3000\u3000为了保证本软件及服务的安全性和功能的一致性，找事365有权不经向您特别通知而对软件的更新，或者对软件的部分功能效果进行改变或者限制。\n
+		\u3000\u3000本软件新版本发布后，旧版本的软件可能无法使用。找事365不保证旧版本软件继续可用及相应的客户服务可保证，请您随时核对并下载最新版本。\n <b>六、用户信息保护</b>\n
+		\u3000\u3000保护求职者个人信息以及招聘者信息是找事365的一项基本原则，找事365将会采取合理的措施保护求职者的个人信息以及招聘者信息。除法律法规规定的情形外，未经用户许可找事365不会向第三方公开、透漏求职者以及企业的信息。找事365对相关信息采用专业加密储蓄与传输方式，保障求职者以及企业信息的安全。
+		\u3000\u3000求职者在注册账号或者使用找事365的过程中，可能需要提供一些必要的信息，例如：为向您提供账号注册服务或者进行用户身份识别需要您填写用户名、求职意向、可兼职时间、姓名、性别、出生年月、现居住地、身份证、手机、邮箱、QQ、身高、照片、是否学生（学生/已毕业）、毕业院校、专业、学历、自我简介、工作经验。\n
+		\u3000\u3000招聘者在注册账号或使用找事365的过程中，可能需要提供一些必要的信息，例如：邮箱、公司名称、公司规模、公司地址、公司电话、负责人、负责人的电话、企业简介、资质（营业执照）等等。\n
+		\u3000\u3000一般情况下，您可随时浏览、修改自己提交的信息。找事365将运用各种安全技术和程序建立完善的管理制度来保护求职者以及企业的个人信息，以免遭受未经授权的访问、使用和披露。\n <b>七、主权利义务条款</b>\n <b>账号使用规范</b>\n
+		\u3000\u30001. 求职者在使用前需要注册一个找事365账号，输入手机号码后系统向该手机发送验证码，用户验证成功后完成注册。\n
+		\u3000\u30002. 招聘者在使用前需要注册一个企业端找事365的账号，输入激活邮箱、密码，上传资质完成注册。\n
+		\u3000\u30003. 找事365账号的所有权归找事365公司所有，注册人不得赠与、借用、租用、转让或售卖找事365账号或者以其他方式许可非注册人使用找事365账号。\n
+		\u3000\u30004. 用户有责任妥善保管注册账号信息及账号密码的安全，用户需要对注册账号以及密码下的行为承担法律责任。用户同意在任何情况下不向他人透漏账号及密码信息。在您怀疑他人在使用您的账号时，您应立即通知找事365。\n
+		\u3000\u30005. 用户在使用手机号码注册账号时，系统将为您自动匹配找事365号，注册后您可以对个人资料进行添加或者修改。\n <b>用户注意事项</b>\n
+		\u3000\u30001. 您理解并同意：为了向您提供有效的服务，本软件会利用您移动通讯端、PC端的处理器和带宽等资源。本软件使用过程中可能产生数据流量的费用，用户需自行向运营商了解相关资费信息，并自行承担相关费用。\n
+		\u3000\u30002. 您理解并同意：本软件的某些功能可能会让第三方知晓用户的信息，例如：招聘方会通过你的申请可查看到可公开的个人资料。\n
+		\u3000\u30003. 您理解并同意找事365将会尽其商业上的合理努力保障您在本软件及服务中的数据存储安全，但是，找事365不能就此提供完全保证，包括但不限于以下情形：找事365不对您在本软件及服务中相关数据额删除或储存失败负责；\n
+		\u3000\u30004. 如果您停止使用本软件及服务，服务停止、终止或取消后，找事365没有义务向您返还任何数据。\n
+		\u3000\u30005. 用户在使用本软件及服务时，须自行承担如下来自找事365不可掌控的风险内容，包括但不限于：由于不可抗拒因素可能引起的个人信息丢失、泄露等风险；用户必须选择与所安装手机相匹配的软件版本，否则，由于软件与手机型号不相匹配所导致的任何问题或损害，均由用户自行承担；用户在使用本软件访问第三方网站时，因第三方网站及相关内容所可能导致的风险，由用户自行承担；用户发布的内容被他人转发、分享，因为等传播可能带来的风险和责任；由于无线网络信息不稳定、无线网络带宽小等原因，所引起的找事365登陆失败、资料同步不完整、页面打开速度慢等风险。\n <b>第三方产品和服务</b>\n
+		\u3000\u30001. 您在使用本软件第三方提供的产品或服务时，除遵守本协议约定外，还应遵守第三方的用户协议。找事365和第三方对可能出现的纠纷在法律规定和约定的范围内各自承担责任。\n
+		\u3000\u30002. 因用户使用本软件或要求找事365提供特定服务时，本软件可能会调用第三方系统或者通过第三方支持用户的使用或访问，使用或访问的结果由第三方提供，找事365不保证通过第三方提供服务及内容的安全性、准确性、有效性及其他不确定的风险，由此若引发的任何争议及损害，与找事365无关，找事365不承担任何责任。\n <b>八、用户行为规范</b>\n <b>信息内容规范</b>\n
+		\u3000\u3000您理解并同意，找事365一直致力于为用户提供文明健康、真实有效、规范有序的网络环境，您不得利用找事365账号或本软件及服务制作、复制、发布、传播如下干扰找事365正常运营，以及侵犯其他用户或者第三方合法权益的内容，包括但不限于：\n
+		\u3000\u3000发布、传播、传送、储存违反国家法律、危害国家安全统一、社会稳定、工序良俗、社会公德以及侮辱、诽谤、淫秽或者含有任何性或性暗示的、暴力的内容；\n
+		\u3000\u3000发布、传播、传送、储存侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的内容；\n
+		\u3000\u3000涉及他人隐私、个人信息或资料的；\n
+		\u3000\u3000发表、传送、传播骚扰、广告信息及垃圾信息；\n
+		\u3000\u3000其他违反法律法规、政策及公序良俗、社会公德或干扰找事365正常运营和侵犯其他用户或第三方合法权益内容的信息。\n <b>软件使用规范</b>\n
+		\u3000\u3000除非法律允许或找事365书面许可，您使用本软件过程中不得从事下列行为：\n
+		\u3000\u3000删除本软件及其副本上关于著作权的信息；\n
+		\u3000\u3000对本软件进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现本软件的源代码；\n
+		\u3000\u3000对本软件或者本软件运行过程中释放到任何终端内存中的数据、软件运行过程中客户端与服务器端的交互数据，以及本软件运行所必须的系统数据，进行复制、修改、增加、删除、挂接运行或创作任何衍生作品，形式包括但不限于使用插件、外挂或找事365经授权的第三方工具/服务接触本软件和相关系统。\n
+		\u3000\u3000通过修改或伪造软件进行中的指令、数据，增加、删减、变动软件的功能或运行效果，或者将用于上述用途的软件、方法进行运营或向公众传播，无论这些行为是否为商业目的；\n
+		\u3000\u3000通过非找事365开发、授权的第三方软件、插件、外挂、系统登录或使用找事365软件及服务，或制作、发布、传播上述工具；	\n
+		\u3000\u3000自行或者授权他人、第三方软件对本软件及其组件、模块、数据进行干扰；\n
+		\u3000\u3000其他未经找事365明示授权的行为。\n <b>服务运营规范</b>\n
+		\u3000\u3000除非法律允许或找事365书面许可，您使用本服务过程中不得从事下列行为：\n
+		\u3000\u3000提交、发布虚假信息，或冒充、利用他人名义的；\n
+		\u3000\u3000诱导其他用户点击链接页面或分享信息的；\n
+		\u3000\u3000虚构事实、隐瞒其真相以误导、欺骗他人的；\n
+		\u3000\u3000侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的；\n
+		\u3000\u3000未经找事365书面许可利用找事365账号和任何功能，以及第三方运营平台推广或互相推广的；\n
+		\u3000\u3000利用找事365账号或本软件及服务从事任何违法犯罪活动的；\n
+		\u3000\u3000制作、发布与以上行为相关的方法、工具，或对此类方法、工具进行运营或传播，无论这些行为是否为商业目的；\n
+		\u3000\u3000其他违反法律法规规定、侵犯其他用户合法权益、干扰产品正常运营或找事365未明示授权的行为。\n <b>对自己行为负责</b>\n
+		\u3000\u3000您充分了解并同意，您必须为自己注册账号下的一切行为负责，包括您所发表的任何内容产生的任何后果。您应对本服务中的内容自行加以判断，并承担因使用内容而引起的所有风险，包括因对内容的正确性、完整性或实用性的依赖而产生的风险。找事365无法且不会对因前述风险而导致的任何损失或损害承担责任。\n <b>九、违约处理</b>\n
+		\u3000\u3000如果找事365发现或收到他人举报或用户违反本协议约定的，找事365有权不经通知随时对相关内容进行删除，并视为情节对违规账号处以包括但不限于警告、限制或禁止使用全部或部分功能、账号封禁直至注销的处罚，并公告处理结果。\n
+		\u3000\u3000您理解并同意，找事365有权依合理判断对违反相关法律法规或本协议规定的行为进行处罚，对违法违规的任何用户采取适当的法律行动，并依据法律法规保存相关信息向有关部门报告等，用户应独自承担由此而产生的一切法律责任。\n
+		\u3000\u3000您理解并同意，因您违反本协议或相关服务条款的规定，导致或产生第三方柱状的任何索赔、要求或损失，您应当独立承担责任，找事365因此遭受损失的，您也应当一并赔偿。\n <b>十、知识产权声明</b>\n
+		\u3000\u3000找事365是本软件的知识产权权利人，本软件的一切著作权、商标权、专利权、商业秘密等知识产权，以及与本软件相关的所有信息内容均受中华人民共和国法律法规和相应的国际条约保护，找事365享有上述知识产权，但相关权利人依照法律规定应享有的权利除外。未经找事365或相关权利人书面同意，您不得为任何商业或非商业目的自行或许可任何第三方事实施、利用、转让上述知识产权。\n <b>十一、终端安全责任</b> 		\u3000\u3000您理解并同意，本软件同大多数互联网软件一样，可能会受到多种因素影响，包括但不限于用户原因、网络服务质量、社会环境等；也可能会受到各种安全问题的侵扰，包括但不限于他人非法利用用户资料，进行现实中的骚扰；用户下载安装的其他软件或访问的其他网站中可能含有病毒、木马程序或其他恶意程序，威胁您的终端设备信息和数据安全，继而影响本软件的正常使用等。因为，您应加强信息安全及个人信息的保护意识，注意密码保护，以免遭受损失。\n
+		\u3000\u3000您不得制作、发布、使用、传播用于窃取找事365账号及他人个人信息，财产的恶意程序。\n
+		\u3000\u3000维护软件安全与正常使用是找事365和您的共同责任，找事365将按照行业标准合理审慎地采取必要技术措施保护您的终端设备信息和数据安全，但是您承认和同意找事365并不能就此提供完全保证。\n
+		\u3000\u3000在任何情况下，您不应轻信收取押金、保证金、体检费、材料费、成本费等违规费用或其他涉及财产的网络信息。并经常留意找事365软硬防范诈骗犯罪的提示。\n <b>十二、其他</b>\n
+		\u3000\u3000您使用本软件即视为您已阅读并同意受本协议的约束。找事365及所属所有权所属单位北京思前软件有限公司有权在必要时修改本协议条款。您可以在本软件的最新版本中查阅相关协议条款。本协议条款变更后，如果您继续使用本软件，即视为您已接受修改后的协议。如果您不接受修改后的协议，应当停止使用本软件。\n
+		\u3000\u3000本协议签订为中华人民共和国北京海淀区。\n
+		\u3000\u3000本协议的成立、生效、履行、解释及纠纷解决，适用中华人民共和国大陆地区。\n
+		\u3000\u3000若您和找事365之间发生任何纠纷或争议，首先应友好协商解决；协商不成的，您有权将纠纷或争议提交本协议签订地有管辖权的人民法院管辖。\n
+		\u3000\u3000本协议所有条款的标题仅为阅读方便，本身并无实际涵义，不能作为本协议涵义解释的依据。\n
+		\u3000\u3000本协议条款无论因何种原因部分无效或不可执行，其余条款仍有效，对双方具有约束力。\n</string>
+    <string name="agreement_content_bottom">找事365\n北京思前软件有限公司</string>
+    <string name="my_invitation_prompt">请您准时参加面试，如有特殊情况提前来点，谢谢！</string>
+    
+    <string name="my_invitation_title">邀约面试</string>
+    <!-- 职位 -->
+
+    <string name="title_activity_make_money">MakeMoneyActivity</string>
+    <string name="title_activity_job_detail">JobDetailActivity</string>
+    <string name="title_activity_my_data">MyDataActivity</string>
+    <string name="title_activity_my_msg">MyMsgActivity</string>
+    <string name="title_activity_my_evaluate">MyEvaluateActivity</string>
+    <string name="title_activity_my_collect">MyCollectActivity</string>
+    <string name="title_activity_chage_pwd">ChagePwdActivity</string>
+    <string name="title_activity_my_resume">MyResumeActivity</string>
+    <string name="title_activity_sqjl">SqjlActivity</string>
+    <string name="title_activity_my_gz">MyGzActivity</string>
+    <string name="title_activity_change_pwd">ChangePwdActivity</string>
+    <!-- vip -->
+    <string name="vip_vip_enterprise">企业会员</string>
+    <string name="vip_vip_wanted">求职会员</string>
+    <string name="vip_vip_certified">已认证</string>
+    <string name="vip_company_title_introduction">公司简介</string>
+    <string name="vip_company_title_release">发布职位</string>
+    <string name="vip_company_title_user">用户评价</string>
+    <string name="vip_company_itme_address">所\t在\t地\t ：</string>
+    <string name="vip_company_itme_scale">公司规模\t ：</string>
+    <string name="vip_company_itme_industry">行业类型\t ：</string>
+    <string name="vip_company_itme_nature">公司性质\t ：</string>
+    <string name="vip_company_itme_contact">联系电话\t ：</string>
+    <string name="vip_company_itme_website">网\t\t\t\t\t址\t：</string>
+    <string name="vip_company_itme_tax">税务登记证：</string>
+    <string name="vip_company_itme_license">营业执照\t ：</string>
+    <string name="vip_company_itme_bruef">公司介绍\t ：</string>
+
+    <!-- 企业 -->
+    <string name="mc_data">单位资料</string>
+    <string name="mc_resume_collect">简历收藏</string>
+    <string name="mc_yyjl">邀约记录</string>
+    <string name="mc_enterprise_certification">企业认证</string>
+    <string name="mc_please_upload_tax">请上传税务登记证</string>
+    <string name="mc_please_upload_license">请上传营业执照</string>
+    <string name="mc_click_upload">点击上传</string>
+    <string name="mc_confirm_authentication">确认认证</string>
+
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:text="@string/my_evaluation_title"
+        app:leftButtonEnable="true" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/card_left_right_padding"
+        android:paddingRight="@dimen/card_left_right_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott_h"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_interview_title"
+                style="@style/item_title"
+                android:text="北京艺术钱箱文化传播有限公司" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_interview_position"
+                style="@style/item_title"
+                android:singleLine="false"
+                android:text="评分："
+                android:textSize="@dimen/hint_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott_h"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:text="@string/my_evaluation_text_meet"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/hint_text_size" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <RatingBar
+                    android:id="@+id/rb_evaluation_meet"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="false"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/my_evaluation_text_work"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/hint_text_size" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <RatingBar
+                    android:id="@+id/rb_evaluation_work"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="false"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:text="@string/my_evaluation_text_deduction"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/hint_text_size" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <RatingBar
+                    android:id="@+id/rb_evaluation_deduction"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="false"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:text="@string/my_evaluation_text_grant"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/hint_text_size" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <RatingBar
+                    android:id="@+id/rb_evaluation_grant"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="false"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_opinion_margin_top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评语：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="您最多可以输入200个字"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/my_ll_item_tv_size" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/ey_opinion_inif"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/my_opinion_itme_margin_text"
+            android:background="@drawable/et_background_grey"
+            android:gravity="left"
+            android:hint="请输入您的邮箱"
+            android:maxLength="180"
+            android:padding="@dimen/icon_right"
+            android:textSize="@dimen/my_ll_item_tv_size" />
+
+        <Button
+            android:id="@+id/bt_evaluation_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edittext_height"
+            android:layout_marginTop="@dimen/my_opinion_margin_top"
+            android:background="@drawable/button_login_bule"
+            android:text="提交"
+            android:textColor="@color/background_white"
+            android:textSize="@dimen/text_size" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_evaluation.xml -->

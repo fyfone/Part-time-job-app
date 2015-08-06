@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sq.jzq.MainActivity" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/sqjl_titlebar"
+        style="@style/title_bar_font"
+        android:text="@string/title_map" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_map.xml -->

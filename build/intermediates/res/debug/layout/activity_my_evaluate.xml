@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:id="@+id/job_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_grey"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:text="我的评价" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <me.maxwin.view.XListView
+        android:id="@+id/sqjl_list"
+        style="@style/sqjl_listview" >
+    </me.maxwin.view.XListView>
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_my_evaluate.xml -->

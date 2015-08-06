@@ -1,0 +1,425 @@
+package com.sq.jzq.my;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.app.AlertDialog;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.CompressFormat;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnKeyListener;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import com.example.testpic.PublishedActivity;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.sq.jzq.BaseActivity;
+import com.sq.jzq.Globals;
+import com.sq.jzq.R;
+import com.sq.jzq.bean.MyDate;
+import com.sq.jzq.bean.MyDate.MyInfoResult;
+import com.sq.jzq.bean.User;
+import com.sq.jzq.util.AppUtil;
+import com.sq.jzq.util.GsonUtils;
+import com.sq.jzq.util.RestTask;
+import com.sq.jzq.util.RestTask.ResponseCallback;
+import com.sq.jzq.util.RestUtil;
+import com.sq.jzq.util.VolleyUtil;
+import com.sq.jzq.views.CircularImage;
+import com.sq.jzq.views.TitleBarView;
+import com.sq.jzq.views.TitleBarView.OnClickEnterButtonListener;
+
+public class MyDataActivity extends BaseActivity {
+	MyInfoResult myInfo;
+	private CircularImage iv_my_head;
+	private ImageView iv_id_behind, iv_id_front;
+	private EditText et_my_name, et_my_age, et_my_ems, et_my_qq, et_my_contact,
+			et_my_id_number, et_my_school;
+	public TitleBarView my_titlebar;
+	private LinearLayout llQsz;
+	private RadioGroup rgSex; // 性别
+	private RadioButton rabMale; // 男
+	private RadioButton rabFemale; // 女
+	private String type = "1";
+
+	@Override
+	public void initWidget() {
+		setContentView(R.layout.activity_my_data);
+
+		rgSex = (RadioGroup) findViewById(R.id.md_sex);
+		rabMale = (RadioButton) findViewById(R.id.md_male);
+		rabFemale = (RadioButton) findViewById(R.id.md_female);
+		my_titlebar = (TitleBarView) findViewById(R.id.my_titlebar);
+		iv_my_head = (CircularImage) findViewById(R.id.iv_my_head);
+		iv_id_behind = (ImageView) findViewById(R.id.iv_id_behind);
+		iv_id_front = (ImageView) findViewById(R.id.iv_id_front);
+		et_my_name = (EditText) findViewById(R.id.et_my_name);
+		// et_my_sex = (EditText) findViewById(R.id.et_my_sex);
+		et_my_age = (EditText) findViewById(R.id.et_my_age);
+		et_my_ems = (EditText) findViewById(R.id.et_my_ems);
+		et_my_qq = (EditText) findViewById(R.id.et_my_qq);
+		et_my_contact = (EditText) findViewById(R.id.et_my_contact);
+		et_my_id_number = (EditText) findViewById(R.id.et_my_id_number);
+		et_my_school = (EditText) findViewById(R.id.et_my_school);
+		llQsz = (LinearLayout) findViewById(R.id.my_data_qsz);
+
+		// this.et_my_ems.setOnKeyListener(new OnKeyListenerImp());
+		iv_my_head.setOnClickListener(this);
+		iv_id_front.setOnClickListener(this);
+		iv_id_behind.setOnClickListener(this);
+		llQsz.setOnClickListener(this);
+
+		rightButton();
+		getDate();
+	}
+
+	// Boolean ems = true;
+	//
+	// private class OnKeyListenerImp implements OnKeyListener {
+	//
+	// public boolean onKey(View dialog, int keyCode, KeyEvent event) {
+	// // TODO Auto-generated method stub
+	// switch (event.getAction()) {
+	// case KeyEvent.ACTION_UP:
+	// String msg = MyDataActivity.this.et_my_ems.getText().toString();
+	// if (msg.matches("\\w+@\\w+\\.\\w+")) {
+	// // 验证通过
+	// // Toast.makeText(MyDataActivity.this, "邮箱格式正确",
+	// ems = true;
+	// // Globals.TOAST_SHORT).show();
+	// } else {
+	// ems = false;
+	//
+	// }
+	// case KeyEvent.ACTION_DOWN:
+	// break;
+	// }
+	// return false;
+	// }
+	// }
+
+	// 处理右键
+	public void rightButton() {
+
+		if (my_titlebar != null) {
+			my_titlebar
+					.setClickEnterButtonListener(new OnClickEnterButtonListener() {
+
+						@Override
+						public void onClickEnterButton(View v) {
+
+<<<<<<< .mine
+							if (et_my_id_number.getText().toString()
+									.matches("^\\d{15}|^\\d{17}([0-9]|X|x)$")
+									&& et_my_ems.getText().toString()
+											.matches("\\w+@\\w+\\.\\w+")
+							) {
+=======
+							if ( AppUtil.isEmail(et_my_ems.getText()
+											.toString())) {
+>>>>>>> .r470
+								Map<String, String> params = new HashMap<String, String>();
+								params.put(
+										Globals.WS_POST_KEY,
+										"{\"Ac\":\"UUI\",\"Para\":{\"Sid\":\""
+												+ User.sessionId
+												+ "\",\"Rn\":\""
+												+ et_my_name.getText()
+														.toString()
+												+ "\",\"A\":\""
+												+ et_my_age.getText()
+														.toString()
+												+ "\",\"Q\":\""
+												+ et_my_qq.getText().toString()
+												+ "\",\"G\":\""
+												+ (rabMale.isChecked() ? "0"
+														: rabFemale.isChecked() ? "1"
+																: "0")
+												+ "\",\"M\":\""
+												+ et_my_contact.getText()
+														.toString()
+												+ "\",\"S\":\""
+												+ et_my_school.getText()
+														.toString()
+												+ "\",\"Em\":\""
+												+ et_my_ems.getText()
+														.toString()
+												+ "\",\"INR\":\""
+												+ et_my_id_number.getText()
+														.toString() + "\"}}");
+								new VolleyUtil() {
+
+									public void analysisData(String response) {
+										if (response.contains("修改成功")) {
+											Toast.makeText(MyDataActivity.this,
+													"修改成功", 0).show();
+											Log.i("修改成功个人资料", response);
+
+										} else {
+											Toast.makeText(MyDataActivity.this,
+													"修改失败", 0).show();
+											Log.i("修改失败个人资料", response);
+										}
+
+									}
+								}.volleyStringRequestPost(MyDataActivity.this,
+										params);
+
+							} else {
+								Toast.makeText(MyDataActivity.this,
+										"您输入的邮箱或身份证格式不正确！", Globals.TOAST_SHORT)
+										.show();
+							}
+
+						}
+					});
+		}
+	}
+
+	public void getDate() {
+		// 获取个人信息
+		Map<String, String> params = new HashMap<String, String>();
+		params.put(Globals.WS_POST_KEY, "{\"Ac\":\"GUI\",\"Para\":{\"Sid\":\""
+				+ User.sessionId + "\"}}");
+		new VolleyUtil() {
+
+			public void analysisData(String response) {
+				MyDate s = GsonUtils.json2bean(response, MyDate.class);
+				if (s == null || !(s.Stu == 1)) {
+					Toast.makeText(MyDataActivity.this, Globals.SER_ERROR,
+							Globals.TOAST_SHORT).show();
+				} else {
+					myInfo = s.Rst;
+				}
+				initMyInfoView();
+
+			}
+		}.volleyStringRequestPost(MyDataActivity.this, params);
+
+	}
+
+	private void initMyInfoView() {
+		if (myInfo != null) {
+			ImageLoader.getInstance().displayImage(myInfo.P, iv_my_head);
+			ImageLoader.getInstance().displayImage(myInfo.IT, iv_id_front);
+			ImageLoader.getInstance().displayImage(myInfo.IH, iv_id_behind);
+			et_my_name.setText(myInfo.RN);
+			if (myInfo.G.equals("男")) {
+				rabMale.setChecked(true);
+			} else {
+				rabFemale.setChecked(true);
+			}
+			// et_my_sex.setText(myInfo.G);
+			et_my_age.setText(myInfo.A);
+			et_my_ems.setText(myInfo.EM);
+			et_my_qq.setText(myInfo.Q);
+			et_my_contact.setText(myInfo.M);
+			et_my_id_number.setText(myInfo.INR);
+			et_my_school.setText(myInfo.S);
+		}
+	}
+
+	@Override
+	public void widgetClick(View v) {
+		switch (v.getId()) {
+		case R.id.iv_my_head:
+			Intent intent = new Intent();
+			intent.setClass(MyDataActivity.this, SelectPicActivity.class);
+			intent.putExtra("type", "icon");
+			startActivityForResult(intent, 1);
+			break;
+		case R.id.iv_id_behind:
+			Intent intent1 = new Intent();
+			intent1.setClass(MyDataActivity.this, SelectPicActivity.class);
+			intent1.putExtra("type", "icon");
+			startActivityForResult(intent1, 4);
+			break;
+		case R.id.iv_id_front:
+			Intent intent2 = new Intent();
+			intent2.setClass(MyDataActivity.this, SelectPicActivity.class);
+			intent2.putExtra("type", "icon");
+			startActivityForResult(intent2, 3);
+			break;
+		case R.id.my_data_qsz:
+			startActivity(new Intent(MyDataActivity.this,
+					PublishedActivity.class));
+		default:
+			break;
+		}
+
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		type = requestCode + "";
+		switch (resultCode) {
+		case 1:
+			if (data != null) {
+				// 取得返回的Uri,基本上选择照片的时候返回的是以Uri形式，但是在拍照中有得机子呢Uri是空的，所以要特别注意
+				Uri mImageCaptureUri = data.getData();
+				// 返回的Uri不为空时，那么图片信息数据都会在Uri中获得。如果为空，那么我们就进行下面的方式获取
+				if (mImageCaptureUri != null) {
+					Bitmap image;
+					try {
+						// 这个方法是根据Uri获取Bitmap图片的静态方法
+						image = MediaStore.Images.Media.getBitmap(
+								this.getContentResolver(), mImageCaptureUri);
+						if (image != null) {
+							// CacheImage.setImageForImageView(User.IconPath,
+							// ivIcon);
+							if ("1".equals(type)) {
+								iv_my_head.setImageBitmap(image);
+							} else if ("3".equals(type)) {
+								iv_id_front.setImageBitmap(image);
+							} else if ("4".equals(type)) {
+								iv_id_behind.setImageBitmap(image);
+							}
+
+						}
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				} else {
+					Bundle extras = data.getExtras();
+					if (extras != null) {
+						// 这里是有些拍照后的图片是直接存放到Bundle中的所以我们可以从这里面获取Bitmap图片
+						Bitmap image = extras.getParcelable("data");
+						if (image != null) {
+							if ("1".equals(type)) {
+								iv_my_head.setImageBitmap(image);
+							} else if ("3".equals(type)) {
+								iv_id_front.setImageBitmap(image);
+							} else if ("4".equals(type)) {
+								iv_id_behind.setImageBitmap(image);
+							}
+							// imgHeadicon.setImageBitmap(image);
+						}
+					}
+				}
+
+			}
+			new UpdateIcon().update(type);
+			break;
+		default:
+			break;
+		}
+
+	}
+
+	public class UpdateIcon implements ResponseCallback {
+		private AlertDialog adUpudateIcon;
+		Bitmap img;
+
+		public void update(String t) {
+			try {
+				List<NameValuePair> params = new ArrayList<NameValuePair>();
+				String req = "{\"Ac\":\"TPSC\",\"Para\":{\"SId\":\""
+						+ User.sessionId + "\",\"T\":\"" + t + "\"}}";
+				params.add(new BasicNameValuePair(Globals.WS_POST_KEY, req));
+				Log.i(Globals.LOG_TAG, params.get(0).getValue());
+				RestTask postTask = null;
+				if ("1".equals(type)) {
+					iv_my_head.setDrawingCacheEnabled(true);
+					img = Bitmap.createBitmap(iv_my_head.getDrawingCache());
+					iv_my_head.setDrawingCacheEnabled(false);
+				} else if ("3".equals(type)) {
+					iv_id_front.setDrawingCacheEnabled(true);
+					img = Bitmap.createBitmap(iv_id_front.getDrawingCache());
+					iv_id_front.setDrawingCacheEnabled(false);
+				} else if ("4".equals(type)) {
+					iv_id_behind.setDrawingCacheEnabled(true);
+					img = Bitmap.createBitmap(iv_id_behind.getDrawingCache());
+					iv_id_behind.setDrawingCacheEnabled(false);
+				}
+
+				File imgFile = new File(getExternalCacheDir(),
+						Globals.CACHE_FILE_NAME);
+				FileOutputStream fos = new FileOutputStream(imgFile);
+				img.compress(CompressFormat.PNG, 0, fos);
+				fos.flush();
+				fos.close();
+				postTask = RestUtil.obtainMultipartPostTask(
+						Globals.WS_URI_POTO, params, imgFile,
+						Globals.CACHE_FILE_NAME);
+
+				postTask.setResponseCallback(this);
+				postTask.execute();
+
+				adUpudateIcon = new AlertDialog.Builder(MyDataActivity.this)
+						.create();
+				adUpudateIcon.show();
+				adUpudateIcon.getWindow().setContentView(R.layout.dialog);
+				// TextView title = (TextView)
+				// adUpudateIcon.getWindow().findViewById(
+				// R.id.dialog_title);
+				// title.setText(getResources().getString(R.string.ts));
+			} catch (Exception e) {
+				Log.i(Globals.LOG_TAG, "Exception:" + e.getMessage());
+			}
+		}
+
+		@Override
+		public void onRequestSuccess(String response) {
+			try {
+				JSONObject entity = new JSONObject(response);
+				if (entity.getString("Stu").equals("1")) {
+					JSONObject result = entity.getJSONObject("Rst");
+					if (result == null) {
+						Log.i(Globals.LOG_TAG, response);
+					} else {
+						if (result.getString("Scd").equals("1")) {// 成功
+							if ("1".equals(type)) {
+								User.setIconPath(result.getString("Po"));
+							}
+
+							// User.saveLoginInfo(MyDataActivity.this);
+							// Toast.makeText(getApplicationContext(),
+							// result.getString("Msg"), 1).show();
+						} else {// 失败
+							;
+						}
+						Toast.makeText(getApplicationContext(),
+								result.getString("Msg"), 1).show();
+					}
+				} else {
+					Log.i(Globals.LOG_TAG,
+							"Json Error -- Status:" + entity.getString("Stu")
+									+ ",Message:" + entity.getString("Msg"));
+				}
+			} catch (JSONException e) {
+				Log.i(Globals.LOG_TAG, e.getMessage());
+			}
+			if (adUpudateIcon != null) {
+				adUpudateIcon.dismiss();
+			}
+		}
+
+		@Override
+		public void onRequestError(Exception error) {
+			if (adUpudateIcon != null) {
+				adUpudateIcon.dismiss();
+			}
+			Toast.makeText(MyDataActivity.this, "没有网络", 0).show();
+		}
+	}
+
+}

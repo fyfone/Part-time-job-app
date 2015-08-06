@@ -1,0 +1,98 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="my_ll_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="my_rl_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/my_ll_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/background_white</item>
+    </style>
+
+    <style name="my_personal_imte">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/my_personal_head_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/my_personal_head_margin_top</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="vip_enterprise_certified_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/text_certified_red</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/edit</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+    </style>
+
+    <!--
+    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vip_recruiters_title_margin_top"
+                android:layout_marginTop="@dimen/vip_recruiters_title_margin_top"
+                android:orientation="horizontal" >
+    -->
+
+    <style name="vip_company_text_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/vip_recruiters_title_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/vip_recruiters_title_margin_top</item>
+    </style>
+
+    <style name="vip_company_text_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_888</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="vip_company_text_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_333333</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="my_edittext_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_333333</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">@string/my_personal_notset</item>
+    </style>
+    
+     <style name="my_edittext_ll">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">@dimen/my_ll_item_about</item>
+        <item name="android:textColor">@color/text_333333</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">@string/my_personal_notset</item>
+    </style>
+    
+     <style name="my_edittext_left">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_marginLeft">@dimen/my_ll_item_about</item>
+    </style>
+    
+    
+
+</resources>

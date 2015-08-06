@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:id="@+id/sel_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white" 
+    android:orientation="vertical">
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/jd_titlebar"
+        style="@style/title_bar_font"
+        android:text="职位详情" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <ScrollView
+        android:id="@+id/jd_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/jd_titlebar" >
+
+        <LinearLayout
+            android:id="@+id/jd_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_title_bott"
+                android:layout_marginTop="@dimen/item_title_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/item_left_right_margin"
+                android:paddingRight="@dimen/item_left_right_margin" >
+
+                <TextView
+                    android:id="@+id/jd_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_333333"
+                    android:textSize="@dimen/text_size" />
+				<ImageView 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/my_sjx"/>
+               
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <LinearLayout style="@style/jd_Linearlayout" >
+
+                <TextView
+                    android:id="@+id/jd_salary"
+                    style="@style/salary"
+                    />
+
+                <TextView
+                    android:id="@+id/jd_unit"
+                    style="@style/salary"
+                     />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jd_Linearlayout" >
+
+                <TextView
+                    android:id="@+id/jd_work_type"
+                    style="@style/title"
+                     />
+
+                <View
+                    style="@style/vertical_line"
+                    android:layout_height="@dimen/jd_vertical_line"
+                    android:layout_marginRight="@dimen/item_title_bott" />
+
+                <TextView
+                    android:id="@+id/jd_num"
+                    style="@style/title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jd_Linearlayout" >
+
+                <TextView
+                    style="@style/item_cn"
+                    android:layout_marginRight="@dimen/item_title_bott"
+                    android:text="发布时间:" />
+
+                <TextView
+                    android:id="@+id/jd_date"
+                    style="@style/item_cn"
+                     />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jd_Linearlayout" >
+
+                <TextView
+                    style="@style/item_cn"
+                    android:layout_marginRight="@dimen/item_title_bott"
+                    android:text="开始时间:" />
+
+                <TextView
+                    android:id="@+id/jd_start_date"
+                    style="@style/item_cn"
+                     />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jd_Linearlayout" >
+
+                <TextView
+                    style="@style/item_cn"
+                    android:layout_marginRight="@dimen/item_title_bott"
+                    android:text="结束时间:" />
+
+                <TextView
+                    android:id="@+id/jd_end_date"
+                    style="@style/item_cn"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/jd_Linearlayout"
+                android:layout_marginBottom="@dimen/item_title_bott" >
+
+                <TextView
+                    style="@style/item_cn"
+                    android:layout_marginRight="@dimen/item_title_bott"
+                    android:text="公司地址:" />
+
+                <TextView
+                    android:id="@+id/jd_loca"
+                    style="@style/item_cn"
+                    android:singleLine="false"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/background_card" />
+
+            <LinearLayout
+                style="@style/jd_Linearlayout"
+                android:layout_marginBottom="@dimen/item_title_bott"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/title"
+                    android:layout_marginBottom="@dimen/item_title_right"
+                    android:text="兼职描述:" />
+
+                <TextView
+                    android:id="@+id/jd_describe"
+                    style="@style/item_cn"
+                    android:singleLine="false"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/background_card" />
+
+            <LinearLayout
+                style="@style/jd_Linearlayout"
+                android:layout_marginBottom="@dimen/item_title_bott"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/title"
+                    android:layout_marginBottom="@dimen/item_title_right"
+                    android:text="兼职要求:" />
+
+                <TextView
+                    android:id="@+id/jd_require"
+                    style="@style/item_cn"
+                    android:singleLine="false"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/background_card" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_title_bott"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:layout_marginRight="@dimen/item_left_right_margin"
+                android:layout_marginTop="@dimen/item_bottom"
+                android:src="@drawable/job_tsh" >
+            </ImageView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/background_card" />
+
+            <LinearLayout
+                style="@style/jd_Linearlayout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/job_line_left" />
+
+                <TextView
+                    style="@style/title"
+                    android:layout_marginBottom="@dimen/item_title_right"
+                    android:text="申请该职位的人" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/job_line_right" />
+            </LinearLayout>
+
+            <com.sq.jzq.views.HorizontialListView
+                android:id="@+id/jd_horizon_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:layout_marginBottom="@dimen/item_bottom"
+                android:layout_marginLeft="@dimen/item_left_right_margin"
+                android:layout_marginRight="@dimen/item_left_right_margin"
+                android:scrollbars="horizontal" >
+            </com.sq.jzq.views.HorizontialListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/background_card" />
+
+    <LinearLayout
+        android:id="@+id/jd_buttom"
+        style="@style/jd_Linearlayout"
+        android:layout_marginBottom="@dimen/item_title_bott"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/jd_gz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/jd_gz_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/job_content_gzh" />
+
+            <TextView
+                android:id="@+id/jd_gz_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icon_right"
+                android:text="关注"
+                android:textColor="@color/text_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jd_sq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/jd_sq_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/job_content_shq" />
+
+            <TextView
+                android:id="@+id/jd_sq_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icon_right"
+                android:text="申请"
+                android:textColor="@color/text_red" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_job_detail.xml -->

@@ -1,0 +1,67 @@
+10
+
+dir
+483
+http://192.168.1.234:8001/svn/Jianzhi/jzq3.0/res
+http://192.168.1.234:8001/svn/Jianzhi
+
+
+
+2015-05-27T06:14:58.359375Z
+483
+fyf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c8c766b8-c636-314c-bad2-896bfa8d386f
+
+values
+dir
+
+drawable
+dir
+
+values-w820dp
+dir
+
+drawable-hdpi
+dir
+
+drawable-xxhdpi
+dir
+
+menu
+dir
+
+values-v11
+dir
+
+anim
+dir
+
+drawable-ldpi
+dir
+
+values-v14
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+

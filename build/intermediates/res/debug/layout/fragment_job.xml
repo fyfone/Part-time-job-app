@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/job_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/background_white"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq">
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        app:leftButtonEnable="false"
+        android:text="兼职列表" >
+    </com.sq.jzq.views.TitleBarView>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/job_card_h"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:id="@+id/job_sel_job_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView 
+                android:id="@+id/job_sel_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size"
+                android:text="@string/job_sel_job"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/job_icon_left"
+                android:src="@drawable/job_left_sjx"/>
+        </LinearLayout>
+       <View 
+           android:layout_width="1dp"
+           android:layout_height="26dp"
+           android:layout_gravity="center_vertical"
+           
+           android:background="@color/vertical_line"
+           />
+        <LinearLayout 
+            android:id="@+id/job_sel_loca_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+             <TextView 
+                android:id="@+id/job_sel_loca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size"
+                android:text="@string/job_sel_loca"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/job_icon_left"
+                android:src="@drawable/job_left_sjx"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View 
+        style="@style/line_style"/>
+    
+     <me.maxwin.view.XListView
+        android:id="@+id/job_xlist"
+        style="@style/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background_white"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none" >
+    </me.maxwin.view.XListView>
+</LinearLayout><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/fragment_job.xml -->

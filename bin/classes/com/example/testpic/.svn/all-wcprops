@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Jianzhi/!svn/ver/425/jzq3.0/src/com/example/testpic
+END
+AlbumHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/AlbumHelper.java
+END
+BitmapCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/BitmapCache.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/FileUtils.java
+END
+ImageBucket.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/ImageBucket.java
+END
+ImageBucketAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/ImageBucketAdapter.java
+END
+ImageItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/ImageItem.java
+END
+ImageGridActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/ImageGridActivity.java
+END
+PhotoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Jianzhi/!svn/ver/411/jzq3.0/src/com/example/testpic/PhotoActivity.java
+END
+Bimp.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/Bimp.java
+END
+TestPicActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/TestPicActivity.java
+END
+ImageGridAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/ImageGridAdapter.java
+END
+NoScrollGridView.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/example/testpic/NoScrollGridView.java
+END
+PublishedActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/425/jzq3.0/src/com/example/testpic/PublishedActivity.java
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Jianzhi/!svn/ver/481/jzq3.0/src/com/sq/jzq/util
+END
+RestTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/42/jzq3.0/src/com/sq/jzq/util/RestTask.java
+END
+AlertUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/399/jzq3.0/src/com/sq/jzq/util/AlertUtil.java
+END
+VolleyUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Jianzhi/!svn/ver/424/jzq3.0/src/com/sq/jzq/util/VolleyUtil.java
+END
+RequestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Jianzhi/!svn/ver/224/jzq3.0/src/com/sq/jzq/util/RequestUtils.java
+END
+UpdateVersionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Jianzhi/!svn/ver/405/jzq3.0/src/com/sq/jzq/util/UpdateVersionService.java
+END
+SharedPreferencesUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Jianzhi/!svn/ver/61/jzq3.0/src/com/sq/jzq/util/SharedPreferencesUtils.java
+END
+DownImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/sq/jzq/util/DownImage.java
+END
+VolleyStringRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Jianzhi/!svn/ver/224/jzq3.0/src/com/sq/jzq/util/VolleyStringRequest.java
+END
+RestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/23/jzq3.0/src/com/sq/jzq/util/RestUtil.java
+END
+ParseXmlService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Jianzhi/!svn/ver/23/jzq3.0/src/com/sq/jzq/util/ParseXmlService.java
+END
+AppUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/481/jzq3.0/src/com/sq/jzq/util/AppUtil.java
+END
+GsonRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Jianzhi/!svn/ver/224/jzq3.0/src/com/sq/jzq/util/GsonRequest.java
+END
+Convert.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Jianzhi/!svn/ver/345/jzq3.0/src/com/sq/jzq/util/Convert.java
+END
+RequestManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Jianzhi/!svn/ver/224/jzq3.0/src/com/sq/jzq/util/RequestManager.java
+END
+GsonUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Jianzhi/!svn/ver/166/jzq3.0/src/com/sq/jzq/util/GsonUtils.java
+END

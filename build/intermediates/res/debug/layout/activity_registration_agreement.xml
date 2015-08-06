@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_white">
+    <com.sq.jzq.views.TitleBarView
+        style="@style/title_bar_font"
+        android:text="@string/agreement" >
+    </com.sq.jzq.views.TitleBarView>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+            android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="@dimen/item_left_right_margin"
+		    android:paddingRight="@dimen/item_left_right_margin"
+		    android:paddingTop="@dimen/item_bottom"
+		    android:orientation="vertical">
+
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agreement_content"
+                android:textColor="@color/text_888"
+                android:lineSpacingExtra="3dp" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agreement_content_bottom"
+                android:textColor="@color/text_888"
+                android:lineSpacingExtra="3dp"
+                android:gravity="fill_vertical"
+                android:layout_gravity="right"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>	
+</LinearLayout>
+<!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/activity_registration_agreement.xml -->

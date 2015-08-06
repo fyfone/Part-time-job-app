@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:text="@string/my_invitation_title"
+        app:leftButtonEnable="true"
+        app:rightButtonBgImgPress="@drawable/my_shzh_press"
+        app:rightButtonEnable="true" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/card_left_right_padding"
+        android:paddingRight="@dimen/card_left_right_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott_h"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_interview_title"
+                style="@style/item_title"
+                android:text="北京艺术钱箱文化传播有限公司" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_interview_position"
+                style="@style/item_title"
+                android:singleLine="false"
+                android:text="服装模特(900/天)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/icon_right"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_invitation_delivery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/item_title_right"
+                android:singleLine="true"
+                android:text="投递时间：2015-03-30 10:30"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_style"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="7dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:src="@drawable/home_lb" />
+
+            <TextView
+                style="@style/sqjl_item_sqsj"
+                android:layout_marginRight="@dimen/icon_right"
+                android:text="面试通知" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott_h"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:singleLine="true"
+                android:text="联  系  人："
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_invitation_contact"
+                style="@style/sqjl_item_date"
+                android:text="2015-03-30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:singleLine="true"
+                android:text="联系电话："
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_invitation_phone"
+                style="@style/sqjl_item_date"
+                android:text="2015-03-30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/icon_right"
+                android:singleLine="true"
+                android:text="公司地址："
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_invitation_loce"
+                style="@style/sqjl_item_date"
+                android:singleLine="false"
+                android:text="2015-03-30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_bott_h"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/item_title"
+                android:singleLine="false"
+                android:text="@string/my_invitation_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

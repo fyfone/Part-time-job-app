@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBarView">
+            <attr name="leftButtonEnable" format="boolean" />
+            <attr name="rightButtonEnable" format="boolean" />
+            <attr name="rightButtonBgImg" format="reference" />
+             <attr name="rightButtonBgImgPress" format="reference" />
+            <attr name="leftButtonBgImg" format="reference" />
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sq.jzq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical" >
+
+    <com.sq.jzq.views.TitleBarView
+        android:id="@+id/job_titlebar"
+        style="@style/title_bar_font"
+        android:layout_width="match_parent"
+        android:text="@string/title_set_opinion"
+        app:leftButtonEnable="true"
+        app:rightButtonEnable="true" >
+    </com.sq.jzq.views.TitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/item_left_right_margin"
+        android:layout_marginRight="@dimen/item_left_right_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_opinion_margin_top"
+            android:text="欢迎提出宝贵意见哦~"
+            android:textColor="@color/text_333333"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_opinion_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="意见名称：" />
+
+            <EditText
+                android:id="@+id/et_opinion_ems"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_opinion_itme_margin_top"
+                android:layout_marginLeft="@dimen/my_opinion_itme_margin_text"
+                android:background="@drawable/et_background_grey"
+                android:hint="请输入您的意见名称"
+                android:padding="@dimen/icon_right"
+                android:singleLine="true"
+                android:textSize="@dimen/my_ll_item_tv_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_opinion_margin_top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的意见内容：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="您最多可以输入200个字"
+                android:textColor="@color/text_888"
+                android:textSize="@dimen/my_ll_item_tv_size" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/ey_opinion_inif"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginTop="@dimen/my_opinion_itme_margin_text"
+            android:background="@drawable/et_background_grey"
+            android:gravity="left"
+            android:hint="请输入您的意见"
+            android:maxLength="200"
+            android:padding="@dimen/icon_right"
+            android:textSize="@dimen/my_ll_item_tv_size" />
+    </LinearLayout>
+
+</LinearLayout>

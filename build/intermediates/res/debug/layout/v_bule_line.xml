@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/login_bulie_line_width"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/login_bulie_line_margin"
+    android:layout_marginLeft="@dimen/login_edittext_im_marginleft"
+    android:layout_marginTop="@dimen/login_bulie_line_margin"
+    android:background="@color/background_blue" >
+
+</View><!-- From: file:/D:/Download/homepage/quanbu/chuanxi/jzq3.0/res/layout/v_bule_line.xml -->
